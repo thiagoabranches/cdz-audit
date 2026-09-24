@@ -214,3 +214,44 @@ Total: 31
 ## Aioria em curso
 - A03H (Lightning Bolt) ✅ — old_id AHdr → ANsb
 - A416 (Lion's Fury) 🟡 — self-ref (AOcl), precisa PASSO 0
+
+## Batch 2 — CONCLUÍDO (2026-09-24)
+
+### Aplicadas (8):
+- DeathMask: A01P (Aeat→AUcb), AUin (AUin→AUls, self-ref)
+- Saga: AEim (AEim→AOmi, self-ref), A0BB (ANab→ANdh)
+- Dohko: AOsh (AOsh→AEfk, self-ref), A00W (ACpv→ANfd)
+- Milo: A01R (ANss mantido, estendido 1→8 níveis)
+- Seiya: A03C (Asth→AHds)
+
+### Mantidas (4):
+- AUcs (DeathMask) — atual completo
+- A00K (Saga) — atual completo
+- A07T (Milo) — atual completo
+- A013 (Seiya) — atual completo
+
+### Bugs capturados no processo:
+- alev faltando em A01P e A01R (corrigidos)
+- self-ref corrigido em AUin, AEim, AOsh
+
+### ⚠️ Revisar depois:
+- AEim → AOmi: mecânica mudou (transformação → refletir dano)
+- AOsh → AEfk: base Blizzard pra "Flurry of Weapons"
+
+## Progresso geral Batch A
+- Mu ✅ (A06G, A00A, AHad)
+- Aioria ✅ (A03H, A416)
+- DeathMask ✅ (A01P, AUin)
+- Saga ✅ (AEim, A0BB)
+- Dohko ✅ (AOsh, A00W)
+- Milo ✅ (A01R)
+- Seiya ✅ (A03C)
+
+Total: 7 heróis processados, 14 skills convertidas, 4 mantidas.
+
+## Fila pro Batch 3:
+- Shion (N401)
+- Shura (N40A)
+- Kamus (N40B)
+- Hyoga (N40E)
+- Shiryu (N40F)
