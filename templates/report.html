@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>CDZ Audit Report</title>
+<style>
+  body { font-family: system-ui, sans-serif; background:#161616; color:#eee; margin:0; padding:20px; }
+  h1 { margin-top:0; }
+  .summary { display:flex; gap:16px; margin-bottom:16px; }
+  .summary div { padding:10px 16px; border-radius:8px; font-weight:bold; }
+  .sum-ok { background:#1e4620; color:#8fd18f; }
+  .sum-atencao { background:#4a3b12; color:#f0c454; }
+  .sum-erro { background:#4a1414; color:#f08080; }
+  .controls { margin-bottom:14px; display:flex; gap:10px; flex-wrap:wrap; align-items:center; }
+  select, button, input[type=checkbox] { font-size:14px; padding:6px 10px; border-radius:6px; border:1px solid #444; background:#222; color:#eee; }
+  button { cursor:pointer; }
+  button:hover { background:#333; }
+  table { border-collapse:collapse; width:100%; font-size:13px; }
+  th, td { border:1px solid #333; padding:6px 8px; text-align:left; }
+  th { background:#222; position:sticky; top:0; }
+  tr.status-OK { background:#132313; }
+  tr.status-ATENCAO { background:#332a10; }
+  tr.status-ERRO { background:#331313; }
+  .badge { padding:2px 8px; border-radius:10px; font-size:11px; font-weight:bold; }
+  .badge-OK { background:#1e4620; color:#8fd18f; }
+  .badge-ATENCAO { background:#4a3b12; color:#f0c454; }
+  .badge-ERRO { background:#4a1414; color:#f08080; }
+  code { background:#000; padding:1px 5px; border-radius:4px; }
+</style>
+</head>
+<body>
+
+<h1>CDZ Audit Report</h1>
+
+<div class="summary">
+  <div class="sum-ok">✅ OK: {{ total_ok }}</div>
+  <div class="sum-atencao">⚠️ Atenção: {{ total_atencao }}</div>
+  <div class="sum-erro">❌ Erro: {{ total_erro }}</div>
+  <div>Total de checagens: {{ total }}</div>
+</div>
+
+<div class="controls">
+  <label>Personagem:
+    <select id="filtroPersonagem" onchange="aplicarFiltros()">
+      <option value="">Todos</option>
+      {% for p in personagens %}
+      <option value="{{ p }}">{{ p }}</option>
+      {% endfor %}
+    </select>
+  </label>
+  <label><input type="checkbox" id="soErro" onchange="aplicarFiltros()"> Só com erro/atenção</label>
+  <button onclick="exportarTxt()">Exportar TXT pro chat</button>
+</div>
+
+<table id="tabela">
+  <thead>
+    <tr><th>Status</th><th>Código</th><th>Personagem</th><th>Campo</th><th>Nível</th><th>Esperado</th><th>Atual</th></tr>
+  </thead>
+  <tbody>
+    {% for l in linhas %}
+    <tr class="status-{{ l.status }}" data-personagem="{{ l.personagem }}" data-status="{{ l.status }}">
+      <td><span class="badge badge-{{ l.status }}">{{ l.status }}</span></td>
+      <td><code>{{ l.codigo }}</code></td>
+      <td>{{ l.personagem }}</td>
+      <td>{{ l.campo }}</td>
+      <td>{{ l.nivel }}</td>
+      <td>{{ l.esperado }}</td>
+      <td>{{ l.atual }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<script>
+function aplicarFiltros() {
+  const p = document.getElementById('filtroPersonagem').value;
+  const soErro = document.getElementById('soErro').checked;
+  document.querySelectorAll('#tabela tbody tr').forEach(tr => {
+    const matchP = !p || tr.dataset.personagem === p;
+    const matchErro = !soErro || tr.dataset.status !== 'OK';
+    tr.style.display = (matchP && matchErro) ? '' : 'none';
+  });
+}
+function exportarTxt() {
+  let linhas = [];
+  document.querySelectorAll('#tabela tbody tr').forEach(tr => {
+    if (tr.style.display === 'none') return;
+    const cells = tr.querySelectorAll('td');
+    linhas.push(`[${cells[0].innerText.trim()}] ${cells[1].innerText} (${cells[2].innerText}) campo=${cells[3].innerText} nivel=${cells[4].innerText} esperado=${cells[5].innerText} atual=${cells[6].innerText}`);
+  });
+  const texto = linhas.join('\n');
+  navigator.clipboard.writeText(texto).then(() => alert('Copiado! (' + linhas.length + ' linhas)'))
+    .catch(() => {
+      const ta = document.createElement('textarea');
+      ta.value = texto; document.body.appendChild(ta); ta.select();
+      document.execCommand('copy'); document.body.removeChild(ta);
+      alert('Copiado! (' + linhas.length + ' linhas)');
+    });
+}
+</script>
+
+</body>
+</html>

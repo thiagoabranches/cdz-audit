@@ -1,0 +1,8 @@
+saida/
+w3u/
+*.bak
+*.bak2
+*.bak3
+__pycache__/
+*.pyc
+dashboard.html

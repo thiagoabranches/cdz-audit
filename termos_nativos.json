@@ -1,0 +1,295 @@
+{
+  "versao": 1,
+  "descricao": "Termos nativos do X-Hero-Reborn que sobraram em campos de skill CDZ. Usados pra detectar contaminação automaticamente.",
+  "termos": [
+    {
+      "termo": "paladin",
+      "substituto": "Mu",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Nome King",
+      "substituto": "Shion",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Tarsus",
+      "substituto": "Aldebaran",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Demon Hunter",
+      "substituto": "Saga",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "dreadlord",
+      "substituto": "DeathMask",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Lightning Queen",
+      "substituto": "Aioria",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Rohan",
+      "substituto": "Shaka",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Nevermore",
+      "substituto": "Milo",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Mev",
+      "substituto": "Shina",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Sylvanas",
+      "substituto": "Aioros",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Blademaster",
+      "substituto": "Shura",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "archmage",
+      "substituto": "Kamus",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Vaishi",
+      "substituto": "Afrodite",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Vaisha",
+      "substituto": "Afrodite",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "paratrooper",
+      "substituto": "Seiya",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "marine",
+      "substituto": "Seiya",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Lich King",
+      "substituto": "Hyoga",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Slardar",
+      "substituto": "Shiryu",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Bado",
+      "substituto": "Seiya",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Alcor",
+      "substituto": "Seiya",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "magical hammer",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "objeto"
+    },
+    {
+      "termo": "magical snakes",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "objeto"
+    },
+    {
+      "termo": "Snakes are immune",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "frase"
+    },
+    {
+      "termo": "Aura Profana",
+      "substituto": "Perfume of the Abyss",
+      "case_sensitive": false,
+      "categoria": "pt-br-nativo"
+    },
+    {
+      "termo": "Golpe das Sombras",
+      "substituto": "Bloody Rose",
+      "case_sensitive": false,
+      "categoria": "pt-br-nativo"
+    },
+    {
+      "termo": "Rifleman",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "footman",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "knight",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "sorceress",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "mountain king",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "blood mage",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "death knight",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "tauren chieftain",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "shadow hunter",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "warden",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "priestess",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "keeper of the grove",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "crypt lord",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "naga",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "pit lord",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Keeper of the Grove",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "personagem"
+    },
+    {
+      "termo": "Naga Priestess",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "unidade-invocada"
+    },
+    {
+      "termo": "Reef Harpy",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "unidade-invocada"
+    },
+    {
+      "termo": "Ice Golem",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "unidade-invocada"
+    },
+    {
+      "termo": "Flame Atronach",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "unidade-invocada"
+    },
+    {
+      "termo": "scarab beetles",
+      "substituto": "?",
+      "case_sensitive": false,
+      "categoria": "unidade-invocada"
+    },
+    {
+      "termo": "Storm",
+      "substituto": "?",
+      "case_sensitive": true,
+      "categoria": "personagem"
+    }
+  ],
+  "whitelist_codigos": [
+    "A0G8",
+    "A0GN",
+    "A0GV",
+    "A0GW",
+    "A02U"
+  ]
+}

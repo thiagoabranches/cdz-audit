@@ -1,0 +1,1062 @@
+{
+  "A06G": {
+    "personagem": "Mu",
+    "alev": 8,
+    "atp1_esperado": "Crystal Net",
+    "hotkey": "C"
+  },
+  "A07Z": {
+    "personagem": "Mu",
+    "alev": 1,
+    "atp1_esperado": "Advanced Teleportation",
+    "hotkey": null
+  },
+  "A00A": {
+    "personagem": "Mu",
+    "alev": 8,
+    "atp1_esperado": "Starlight Extinction",
+    "hotkey": "F"
+  },
+  "A097": {
+    "personagem": "Mu",
+    "alev": 4,
+    "atp1_esperado": "Crystal Wall",
+    "hotkey": "R",
+    "nota": "ANTES era Rank, padronizado pra Level"
+  },
+  "AHad": {
+    "personagem": "Mu",
+    "alev": 8,
+    "atp1_esperado": "Restoration",
+    "hotkey": null,
+    "nota": "ANTES era Rank, padronizado pra Level"
+  },
+  "A010": {
+    "personagem": "Mu",
+    "alev": 1,
+    "atp1_esperado": "Stellar Revolution",
+    "hotkey": null
+  },
+  "AHtb": {
+    "personagem": "Shion",
+    "alev": 8,
+    "atp1_esperado": "Stellar Wreath",
+    "hotkey": "T"
+  },
+  "AUau": {
+    "personagem": "Shion",
+    "alev": 8,
+    "atp1_esperado": "Cosmic Endurance",
+    "hotkey": null
+  },
+  "AHtc": {
+    "personagem": "Shion",
+    "alev": 8,
+    "atp1_esperado": "Psionic Move",
+    "hotkey": "C"
+  },
+  "AHbh": {
+    "personagem": "Shion",
+    "alev": 8,
+    "atp1_esperado": "Energy Shield",
+    "hotkey": null
+  },
+  "AHav": {
+    "personagem": "Shion",
+    "alev": 4,
+    "atp1_esperado": "Stardust Revolution",
+    "hotkey": "V"
+  },
+  "A017": {
+    "personagem": "Shion",
+    "alev": 1,
+    "atp1_esperado": "Hecatombe dos Espiritos (Sekishiki Tenryouha)",
+    "hotkey": "W"
+  },
+  "A08L": {
+    "personagem": "Aldebaran",
+    "alev": 8,
+    "atp1_esperado": "Great Horn",
+    "hotkey": "F"
+  },
+  "A07M": {
+    "personagem": "Aldebaran",
+    "alev": 8,
+    "atp1_esperado": "Taurus Impact",
+    "hotkey": "R"
+  },
+  "A084": {
+    "personagem": "Aldebaran",
+    "alev": 8,
+    "atp1_esperado": "Defensive Stance",
+    "hotkey": null
+  },
+  "A07D": {
+    "personagem": "Aldebaran",
+    "alev": 8,
+    "atp1_esperado": "Cosmo Resistance",
+    "hotkey": null
+  },
+  "A07E": {
+    "personagem": "Aldebaran",
+    "alev": 4,
+    "atp1_esperado": "Unstoppable Strength",
+    "hotkey": "X"
+  },
+  "A00K": {
+    "personagem": "Saga",
+    "alev": 8,
+    "atp1_esperado": "Satan Imperial",
+    "hotkey": "F"
+  },
+  "AEim": {
+    "personagem": "Saga",
+    "alev": 8,
+    "atp1_esperado": "Other Side",
+    "hotkey": "R"
+  },
+  "AEev": {
+    "personagem": "Saga",
+    "alev": 8,
+    "atp1_esperado": "Labirinto de Gemeos e Ilusionismo",
+    "hotkey": null
+  },
+  "A0BB": {
+    "personagem": "Saga",
+    "alev": 4,
+    "atp1_esperado": "Another Dimension",
+    "hotkey": "W"
+  },
+  "AEme": {
+    "personagem": "Saga",
+    "alev": 4,
+    "atp1_esperado": "Bencao da Deusa da Sabedoria",
+    "hotkey": "T"
+  },
+  "A083": {
+    "personagem": "Saga",
+    "alev": 1,
+    "atp1_esperado": "Galaxian Explosion",
+    "hotkey": null
+  },
+  "AUcs": {
+    "personagem": "DeathMask",
+    "alev": 8,
+    "atp1_esperado": "Darkworld Waves",
+    "hotkey": "W"
+  },
+  "A01P": {
+    "personagem": "DeathMask",
+    "alev": 1,
+    "atp1_esperado": "Animate Corpses",
+    "hotkey": null
+  },
+  "A00H": {
+    "personagem": "DeathMask",
+    "alev": 8,
+    "atp1_esperado": "Chilling Scream",
+    "hotkey": "T"
+  },
+  "AUin": {
+    "personagem": "DeathMask",
+    "alev": 4,
+    "atp1_esperado": "Swarm of Spirits",
+    "hotkey": "R"
+  },
+  "AUav": {
+    "personagem": "DeathMask",
+    "alev": 8,
+    "atp1_esperado": "Vampiric Aura",
+    "hotkey": null
+  },
+  "A016": {
+    "personagem": "Aioria",
+    "alev": 1,
+    "atp1_esperado": "Dissipate",
+    "hotkey": null
+  },
+  "A03H": {
+    "personagem": "Aioria",
+    "alev": 4,
+    "atp1_esperado": "Lightning Bolt",
+    "hotkey": "Z"
+  },
+  "A03I": {
+    "personagem": "Aioria",
+    "alev": 8,
+    "atp1_esperado": "Lightning Plasma",
+    "hotkey": null
+  },
+  "A07Q": {
+    "personagem": "Aioria",
+    "alev": 8,
+    "atp1_esperado": "Lightning Strike",
+    "hotkey": "R"
+  },
+  "AOcl": {
+    "personagem": "Aioria",
+    "alev": 8,
+    "atp1_esperado": "Lion's Fury",
+    "hotkey": "C"
+  },
+  "ANfl": {
+    "personagem": "Shaka",
+    "alev": 8,
+    "atp1_esperado": "Photon Burst",
+    "hotkey": "F"
+  },
+  "A049": {
+    "personagem": "Shaka",
+    "alev": 8,
+    "atp1_esperado": "Tenma Kofuku",
+    "hotkey": "C"
+  },
+  "A042": {
+    "personagem": "Shaka",
+    "alev": 8,
+    "atp1_esperado": "Ohm",
+    "hotkey": null
+  },
+  "ANhx": {
+    "personagem": "Shaka",
+    "alev": 8,
+    "atp1_esperado": "Tenbu Horin",
+    "hotkey": "D"
+  },
+  "Arsw": {
+    "personagem": "Shaka",
+    "alev": 8,
+    "atp1_esperado": "Tenku Haja Chimimoryo",
+    "hotkey": "W"
+  },
+  "A044": {
+    "personagem": "Shaka",
+    "alev": 4,
+    "atp1_esperado": "Rikudo Rinne",
+    "hotkey": "R"
+  },
+  "A08Z": {
+    "personagem": "Milo",
+    "alev": 4,
+    "atp1_esperado": "Scarlet Needle: Antares",
+    "hotkey": "R"
+  },
+  "A07T": {
+    "personagem": "Milo",
+    "alev": 8,
+    "atp1_esperado": "Scarlet Needle",
+    "hotkey": null
+  },
+  "A08R": {
+    "personagem": "Milo",
+    "alev": 8,
+    "atp1_esperado": "Poison Sting",
+    "hotkey": null
+  },
+  "A01R": {
+    "personagem": "Milo",
+    "alev": 1,
+    "atp1_esperado": "Restriction",
+    "hotkey": null
+  },
+  "A087": {
+    "personagem": "Milo",
+    "alev": 8,
+    "atp1_esperado": "Terrifying Presence",
+    "hotkey": null
+  },
+  "A090": {
+    "personagem": "Milo",
+    "alev": 1,
+    "atp1_esperado": "Agulha Escarlate Katakeo (Antares)",
+    "hotkey": null
+  },
+  "A08H": {
+    "personagem": "Shina",
+    "alev": 8,
+    "atp1_esperado": "Thunder Claw",
+    "hotkey": "X"
+  },
+  "A0HA": {
+    "personagem": "Shina",
+    "alev": 8,
+    "atp1_esperado": "Shuriken Storm",
+    "hotkey": null,
+    "nota": "skill nova"
+  },
+  "A0HB": {
+    "personagem": "Shina",
+    "alev": 8,
+    "atp1_esperado": "Poisoned Kunai",
+    "hotkey": null,
+    "nota": "skill nova; aub1 2-8 pendente"
+  },
+  "A00B": {
+    "personagem": "Aldebaran",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A091": {
+    "personagem": "Aldebaran",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A092": {
+    "personagem": "Aioros",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AHfa": {
+    "personagem": "Aioros",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AEar": {
+    "personagem": "Aioros",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A015": {
+    "personagem": "Aioros",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A000": {
+    "personagem": "Aioros",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0BT": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AOwk": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AOcr": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A074": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A08M": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A067": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "ANms": {
+    "personagem": "Kamus",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AHbz": {
+    "personagem": "Kamus",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A009": {
+    "personagem": "Kamus",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AHwe": {
+    "personagem": "Kamus",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A003": {
+    "personagem": "Kamus",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A00X": {
+    "personagem": "Kamus",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A09N": {
+    "personagem": "Afrodite",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0A8": {
+    "personagem": "Afrodite",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A09O": {
+    "personagem": "Afrodite",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A09M": {
+    "personagem": "Afrodite",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A09P": {
+    "personagem": "Afrodite",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A09R": {
+    "personagem": "Afrodite",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A037": {
+    "personagem": "Seiya",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A013": {
+    "personagem": "Seiya",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A047": {
+    "personagem": "Seiya",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A04C": {
+    "personagem": "Seiya",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A03C": {
+    "personagem": "Seiya",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A038": {
+    "personagem": "Seiya",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AUfn": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0FF": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A062": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AUfu": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A035": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A006": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A06Y": {
+    "personagem": "Shiryu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A072": {
+    "personagem": "Shiryu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A08Q": {
+    "personagem": "Shiryu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A071": {
+    "personagem": "Shiryu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A099": {
+    "personagem": "Shiryu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A06V": {
+    "personagem": "Shiryu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "ANlm": {
+    "personagem": "Ikki",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "ANrf": {
+    "personagem": "Ikki",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "ANso": {
+    "personagem": "Ikki",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A03K": {
+    "personagem": "Ikki",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0A1": {
+    "personagem": "Ikki",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AUim": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AUts": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0F7": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AUls": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A020": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0BV": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A06S": {
+    "personagem": "Orpheu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "ANsw": {
+    "personagem": "Orpheu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A06W": {
+    "personagem": "Orpheu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A06X": {
+    "personagem": "Orpheu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "AEah": {
+    "personagem": "Orpheu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A07N": {
+    "personagem": "Orpheu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A00Q": {
+    "personagem": "Siegfried",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A06O": {
+    "personagem": "Siegfried",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0F5": {
+    "personagem": "Siegfried",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A008": {
+    "personagem": "Siegfried",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A00I": {
+    "personagem": "Siegfried",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A00S": {
+    "personagem": "Siegfried",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "Acri": {
+    "personagem": "Sorento",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A036": {
+    "personagem": "Sorento",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "ANfa": {
+    "personagem": "Sorento",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A033": {
+    "personagem": "Sorento",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A031": {
+    "personagem": "Sorento",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A02U": {
+    "personagem": "Sorento",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0GM": {
+    "personagem": "Marin",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0GL": {
+    "personagem": "Marin",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0GQ": {
+    "personagem": "Marin",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A075": {
+    "personagem": "Marin",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0GS": {
+    "personagem": "Marin",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0GT": {
+    "personagem": "Marin",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A01C": {
+    "personagem": "DeathMask",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A02V": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A05Z": {
+    "personagem": "Shina",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A07V": {
+    "personagem": "Milo",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A07W": {
+    "personagem": "Milo",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A082": {
+    "personagem": "Aioros",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A09Q": {
+    "personagem": "DeathMask",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A08F": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A01J": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A01M": {
+    "personagem": "Aioria",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A08T": {
+    "personagem": "Shiryu",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0CU": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0CV": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0CW": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0CX": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0FK": {
+    "personagem": "Hyoga",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A0G4": {
+    "personagem": "Shura",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  },
+  "A441": {
+    "personagem": "Shun",
+    "alev": null,
+    "atp1_esperado": null,
+    "hotkey": null,
+    "base_esperada": null,
+    "nota": "adicionado — completar com design"
+  }
+}
