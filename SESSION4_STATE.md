@@ -141,3 +141,20 @@ Kiki e Hakurei também não.
   → importar: .mdl + _portrait + BTNAnasterianSunstrider.blp
   → depois: setar umdl/uico/uPor/ussi no Hmkg
   → referência: mesma técnica da Aura Sagrada (Kiki)
+
+## Lote 1 (5 dourados) — resultado
+
+Nenhuma substituição aplicada por A4XX ser inferior em
+valores/níveis. Método "trocar skill inteira" não funciona.
+
+Nova estratégia: trocar SÓ a base (old_id) da skill atual.
+  Ex: A06G (base Acrs) → editar pra base AHtb
+  Mantém 8 níveis, ganha base correta.
+
+Pendente: confirmar se o parser suporta editar base de
+skill já existente.
+
+Decisões de design fechadas:
+- A084 (Defensive Stance): MANTER atual (buff stats)
+- A03H (Lightning Bolt): TROCAR por A413 (dano+stun)
+- AOcl (Lion's Fury): TROCAR por A416 (buff velocidade)
