@@ -158,3 +158,29 @@ Decisões de design fechadas:
 - A084 (Defensive Stance): MANTER atual (buff stats)
 - A03H (Lightning Bolt): TROCAR por A413 (dano+stun)
 - AOcl (Lion's Fury): TROCAR por A416 (buff velocidade)
+
+## 🚨 BUG CRÍTICO — self-ref skill perde identidade
+
+Quando old_id == new_id (skill autorreferente), mudar
+old_id SEM setar new_id explícito DESTRÓI a skill.
+
+Exemplo: AHad antes (old=AHad, new=blank)
+         AHad depois bugado (old=Ahea, new=blank)
+         → Nada responde por "AHad" no arquivo
+         → Slot vazio no kit do herói
+
+Correção: setar new_id = old_id_original ANTES de mudar.
+
+MÉTODO DEFINITIVO = 6 passos:
+  0. Se self-ref: setar new_id explícito
+  1. Trocar old_id
+  2. Adicionar campos da nova base
+  3. Manter identidade
+  4. Ajustar campos que mudam significado
+  5. Estender pra 8 níveis
+
+## Kit do Mu — FECHADO
+- A06G (Crystal Net) ✅
+- A00A (Starlight Extinction) ✅
+- AHad (Restoration) ✅
+- uhab será revertido pra: A06G,A07Z,A00A,A097,AHad
