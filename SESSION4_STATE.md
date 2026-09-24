@@ -184,3 +184,33 @@ MÉTODO DEFINITIVO = 6 passos:
 - A00A (Starlight Extinction) ✅
 - AHad (Restoration) ✅
 - uhab será revertido pra: A06G,A07Z,A00A,A097,AHad
+
+## 📋 Lista de 31 skills SELF-REF (precisam PASSO 0)
+
+Quando old_id == new_id, setar new_id explícito antes de trocar base.
+Se pular, a skill perde identidade e some do jogo.
+
+Shion: AHtb, AUau, AHtc, AHav
+Saga: AEim, AEev, AEme
+DeathMask: AUcs, AUin, AUav
+Aioria: AOcl, ANfl
+Shaka: ANhx, Arsw
+Aioros: AHfa, AEar
+Shura: AOwk, AOcr
+Kamus: ANms, AHbz, AHwe
+Hyoga: AUfn, AUfu
+Ikki: ANlm, ANrf, ANso
+Shun: AUim, AUts, AUls
+Sorento: Acri, ANfa
+
+Total: 31
+
+## Kit do Mu — FECHADO (2026-09-24)
+- A06G (Crystal Net) ✅
+- A00A (Starlight Extinction) ✅
+- AHad (Restoration) ✅
+- uhab revertido: A06G,A07Z,A00A,A097,AHad
+
+## Aioria em curso
+- A03H (Lightning Bolt) ✅ — old_id AHdr → ANsb
+- A416 (Lion's Fury) 🟡 — self-ref (AOcl), precisa PASSO 0
