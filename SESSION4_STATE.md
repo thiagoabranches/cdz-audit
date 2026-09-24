@@ -133,3 +133,11 @@ Casos críticos:
 
 Marin (H000) NÃO tem versão N4XX — pendência separada.
 Kiki e Hakurei também não.
+
+## Skins pendentes de importação (assets não estão no MPQ)
+
+- AnasterianSunstrider (Shion / Hmkg)
+  → extrair de: war3.w3mod\units\other\AnasterianSunstrider\
+  → importar: .mdl + _portrait + BTNAnasterianSunstrider.blp
+  → depois: setar umdl/uico/uPor/ussi no Hmkg
+  → referência: mesma técnica da Aura Sagrada (Kiki)
