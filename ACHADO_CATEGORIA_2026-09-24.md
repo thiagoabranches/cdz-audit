@@ -58,3 +58,27 @@ Seiya, Marin, Hakurei, Geki, Kiki, Shina.
 
 - decrypt_mpq.py: decripta w3u/w3h/w3q/w3t do MPQ
 - audit_categoria.py: lê w3u decriptado + analisa upra
+
+
+## BLOCO D — Análise via Gemini CLI (2026-09-24)
+
+### Descobertas
+
+1. **SKIN do Shion — NUNCA APLICADA**
+   - Código: Hmkg (Mountain King)
+   - umdl atual: units\human\Archmage\Archmage.mdl
+   - Esperado (S2): units\other\AnasterianSunstrider\AnasterianSunstrider
+   - Dossiê S2 estava errado — dizia Hssa, real é Hmkg
+
+2. **AHbh (Energy Shield) — CONTAMINADA (não vazia)**
+   - anam: "Lyra's Harmony" (skill do Orpheu)
+   - atp1: {} (vazio — 0 níveis)
+   - aub1: {1: "Every spell Orpheu casts resonates a Musical Note..."}
+   - base: None
+   - Contaminação cruzada com Orpheu — não é "skill nunca feita", é cópia não sobrescrita
+
+### Correções para próximo dossiê
+
+- Shion está no código Hmkg, não Hssa
+- AHbh tem texto do Orpheu, não está vazio
+- Próximo passo: reimplementar AHbh com base ANms + texto CDZ

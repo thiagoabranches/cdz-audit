@@ -20,7 +20,7 @@ def _abrir_mpq(data):
     def _safe(self, fn, *a, **k):
         try:
             _orig(self, fn, *a, **k)
-        except NotImplementedError:
+        except (NotImplementedError, AttributeError, TypeError):
             self.files = []
 
     mpyq.MPQArchive.__init__ = _safe

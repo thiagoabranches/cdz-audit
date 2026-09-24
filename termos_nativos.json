@@ -291,5 +291,10 @@
     "A0GV",
     "A0GW",
     "A02U"
-  ]
+  ],
+  "notas": {
+    "w3q": "Sistema nativo X-Hero (altar upgrade atk/arm 0-10). Não auditar.",
+    "w3t": "Itens temáticos mitologia+CDZ. Nomes nativos são referências de classe.",
+    "w3h": "Buffs base do mapa (Ice Golem, Naga, Knight). Não são contaminação."
+  }
 }

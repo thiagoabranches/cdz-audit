@@ -178,10 +178,10 @@ def main():
         sys.exit(1)
 
     mapa = sys.argv[1]
-    saida_dir = Path('w3u')
+    saida_dir = Path(sys.argv[2]) if len(sys.argv) > 2 else Path('w3u')
     saida_dir.mkdir(parents=True, exist_ok=True)
 
-    for nome in ['war3map.w3u', 'war3map.w3h', 'war3map.w3q', 'war3map.w3t']:
+    for nome in ['war3map.w3a', 'war3map.w3u', 'war3map.w3h', 'war3map.w3q', 'war3map.w3t']:
         print(f'--- {nome} ---')
         try:
             data, block = ler_arquivo(mapa, nome)

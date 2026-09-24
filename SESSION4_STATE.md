@@ -69,9 +69,11 @@ Tipo 1 (herda base errada, nunca setou upra): 10
 Tipo 2 (upra explícito errado): 3
   H009→AGI, Hvsh→INT, Nklj→STR
 
-### 🟡 BLOCO D — Shion
-- Skin: nunca aplicada (design S2 aprovado: AnasterianSunstrider)
-- AHbh (Energy Shield): nunca implementada
+### 🔴 BLOCO D — Shion (ANALISADO via Gemini CLI)
+- Skin: nunca aplicada — umdl é Archmage.mdl (código real é Hmkg, dossiê S2 errado)
+- AHbh: contaminada com texto do Orpheu (Lyra's Harmony + Musical Notes)
+- Base do AHbh: None (não tem nem base)
+- Próximo: reimplementar com base ANms + texto CDZ
 
 ### 🟡 BLOCO E — reference.json
 - Só cobre Lote 1 (48 skills)
@@ -115,3 +117,19 @@ Quando Claude voltar (16:50):
 - decrypt_mpq.py — decripta w3u/w3h/w3q/w3t
 - parser_w3u.py — lê w3u decriptado
 - check_coerencia.py — cruza aub1 x base
+
+## 🔴 DESCOBERTA FINAL — Mapas têm heróis DUPLICADOS
+
+- Versões ANTIGAS (spawnam hoje): Hpal, Hmkg, Edem, H002, H009, N00W
+- Versões NOVAS (corretas): N400-N416
+- As skills A4XX (base correta) JÁ EXISTEM no mapa
+- Bloco A = problema de WIRING, não de skill
+- Correção: trocar H002→N40D, H009→N405, N00W→N408, etc.
+
+Casos críticos:
+  Seiya: H002 → N40D (A432/A433/A434)
+  Aioria: H009 → N405 (A413-A416)
+  Milo: N00W → N408 (A41E-A421)
+
+Marin (H000) NÃO tem versão N4XX — pendência separada.
+Kiki e Hakurei também não.
