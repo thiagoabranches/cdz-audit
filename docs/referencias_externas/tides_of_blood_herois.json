@@ -1,0 +1,845 @@
+{
+  "mapa": "Tides of Blood Beta v99m",
+  "total_herois": 18,
+  "herois": [
+    {
+      "codigo": "Hblm",
+      "base_nativa": null,
+      "nome_titulo": null,
+      "nomes_proprios": [
+        "Serathis"
+      ],
+      "atributo_primario": null,
+      "str_base": 22,
+      "agi_base": null,
+      "int_base": 1,
+      "spells": [
+        {
+          "codigo": "AOs2",
+          "base_nativa": null,
+          "nome": "Crimson Wake",
+          "niveis": 5,
+          "tooltip_curto": "The Blood Mage gathers his strength momentarily, then unleashes a torrent of blood, dealing damage to each enemy unit in its wake. Costs 100 hit points to cast.",
+          "descricao_nivel1": "The Blood Mage gathers his strength momentarily, then unleashes a torrent of blood, dealing <AOs2,DataA1> damage to each enemy unit in its wake. Costs 100 hit points to cast."
+        },
+        {
+          "codigo": "A02X",
+          "base_nativa": "ANst",
+          "nome": "Tides of Blood",
+          "niveis": 5,
+          "tooltip_curto": "Unleashes torrents of blood-dimmed tides on the Blood Mage's enemies. Costs 175 hit points to cast.",
+          "descricao_nivel1": "Unleashes torrents of blood-dimmed tides on the Blood Mage's enemies. Each wave deals <A02X:ANst,DataC1> damage. <A02X:ANst,DataA1> waves per second. Lasts <A02X:ANst,Dur1> seconds. Costs 175 hit points to cast."
+        },
+        {
+          "codigo": "AUav",
+          "base_nativa": null,
+          "nome": "Bleed",
+          "niveis": 5,
+          "tooltip_curto": "The source of the Blood Mage's power courses through the veins of his enemies, where he is not content to let it idle. Every attack he delivers draws back a part of their life force and combines it with his own.",
+          "descricao_nivel1": "The source of the Blood Mage's power courses through the veins of his enemies, where he is not content to let it idle. Every attack he delivers draws back <AUav,DataA1,%>% of the damage inflicted and combines it with his own lifeforce."
+        },
+        {
+          "codigo": "ANdp",
+          "base_nativa": null,
+          "nome": "Summon Blood Elemental",
+          "niveis": 5,
+          "tooltip_curto": "Summons a blood elemental to attack the Blood Mage's enemies. Costs 115 hit points to cast. If the elemental survives to the end of its timer, it returns 85 hit points to the Blood Mage. Attacks land and air units.",
+          "descricao_nivel1": "Summons a blood elemental to attack the Blood Mage's enemies. Has <hwat,HP> hit points. Lasts 60 seconds. Costs 115 hit points to cast. If the elemental survives to the end of it's timer, it returns 85 hit points to the Blood Mage. Attacks land and air units."
+        }
+      ]
+    },
+    {
+      "codigo": "Emoo",
+      "base_nativa": null,
+      "nome_titulo": "Scythian Maiden",
+      "nomes_proprios": [
+        "Phoebe",
+        "Kynthia"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "Aroc",
+          "base_nativa": null,
+          "nome": "Pluck Yew",
+          "niveis": 5,
+          "tooltip_curto": "The flexibility of her yew-wood bow allows the Maiden to nock several arrows at a time, giving her multiple attacks with each draw of the bowstring. The range of these extra shots is unaffected by Potnia Theron.",
+          "descricao_nivel1": "The flexibility of her yew-wood bow allows the Maiden to nock several arrows at a time, giving her 2 extra attacks with each draw of the bowstring. Each extra attack deals <Aroc,DataA1> damage. The range of these extra shots is unaffected by Potnia Theron."
+        },
+        {
+          "codigo": "AEev",
+          "base_nativa": null,
+          "nome": "Potnia Theron",
+          "niveis": 3,
+          "tooltip_curto": "The Maiden assumes her place as mistress of the wilds. Her attack range increases by 100, her movement speed by 25, and her armor by 2 with each level of this ability.",
+          "descricao_nivel1": "The Maiden assumes her place as mistress of the wilds. Her attack range increases by 100, her movement speed by 25, and her armor by 2 with each level of this ability."
+        },
+        {
+          "codigo": "AOsf",
+          "base_nativa": null,
+          "nome": "Summon Nala",
+          "niveis": 5,
+          "tooltip_curto": "Summons Nala, the sister tiger of the Maiden's mount. Nala is resistant to magic and at later levels can also maul the Maiden's enemies.",
+          "descricao_nivel1": "Summons Nala, the sister tiger of the Maiden's mount. Nala has <ngzc,HP> hit points and is resistant to magic."
+        },
+        {
+          "codigo": "ANwm",
+          "base_nativa": null,
+          "nome": "Summon Accipitrem",
+          "niveis": 5,
+          "tooltip_curto": "Summons one of the ancient Accipitres hawks to attack the Maiden's enemies. The Accipiter can see invisible units, and at later levels is permanently invisible.",
+          "descricao_nivel1": "Summons one of the ancient Accipitres hawks to attack the Maiden's enemies. The Accipiter has <nwe1,HP> hit points and can see invisible units."
+        }
+      ]
+    },
+    {
+      "codigo": "H005",
+      "base_nativa": "Hamg",
+      "nome_titulo": "Initiate of the Sun",
+      "nomes_proprios": [
+        "Jean"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A00G",
+          "base_nativa": "Arpl",
+          "nome": "Cauterize",
+          "niveis": 5,
+          "tooltip_curto": "Cauterizes the wounds of a number of nearby friendly non-mechanical units. Costs 5 mana per unit, but only subtracts mana according to the number of units healed.",
+          "descricao_nivel1": "Cauterizes the wounds of <A00G:Arpl,DataE1> nearby friendly non-mechanical units for <A00G:Arpl,DataA1> hit points. Costs 10 mana per unit, but only subtracts mana according to the number of units healed."
+        },
+        {
+          "codigo": "A00R",
+          "base_nativa": "AHab",
+          "nome": "Solar Battery",
+          "niveis": 5,
+          "tooltip_curto": "Dramatically increases the Initiate's mana regeneration.",
+          "descricao_nivel1": "Dramatically increases the Initiate's mana regeneration, adding .75 per second."
+        },
+        {
+          "codigo": "AHfs",
+          "base_nativa": null,
+          "nome": "Flare",
+          "niveis": 3,
+          "tooltip_curto": "Calls down waves of solar fire, incinerating enemy and allied units and buildings alike.",
+          "descricao_nivel1": "Calls down waves of solar fire, incinerating enemy and allied units and buildings alike (wait until it finishes casting for max effect)."
+        },
+        {
+          "codigo": "A00W",
+          "base_nativa": "ANsh",
+          "nome": "Phoenix Wake",
+          "niveis": 5,
+          "tooltip_curto": "The Initiate calls on the Phoenix, damaging land units and buildings in it's wake.",
+          "descricao_nivel1": "The Initiate calls on the Phoenix, dealing <A00W:ANsh,DataA1> damage to land units and buildings in it's wake."
+        }
+      ]
+    },
+    {
+      "codigo": "E003",
+      "base_nativa": "Edem",
+      "nome_titulo": "Fedaykin",
+      "nomes_proprios": [
+        "Leto Atreides II"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A003",
+          "base_nativa": "Ansk",
+          "nome": "Sandtrout Skin",
+          "niveis": 5,
+          "tooltip_curto": "\"My skin is not my own.\" Leto takes the Sandtrout Skin, beginning his transformation and making him impervious to attack.",
+          "descricao_nivel1": "Reduces all attacks against the God Emperor by <A003:Ansk,DataC1> damage."
+        },
+        {
+          "codigo": "A001",
+          "base_nativa": "ANca",
+          "nome": "Weirding Way",
+          "niveis": 5,
+          "tooltip_curto": "The Fedaykin exercises absolute muscle control, attacking at amazing speeds. No nearby enemy units are spared his blade.",
+          "descricao_nivel1": "The Fedaykin exercises total muscle and nerve control, attacking each nearby enemy unit with <A001:ANca,DataA1,%>% of his full power."
+        },
+        {
+          "codigo": "A004",
+          "base_nativa": "ANst",
+          "nome": "The Golden Path",
+          "niveis": 3,
+          "tooltip_curto": "Having learned the Wierding Way and taken the Sandtrout Skin, Leto Atreides II sets out on the Golden Path that will make him God Emperor.",
+          "descricao_nivel1": "Having learned the Wierding Way and taken the Sandtrout Skin, Leto Atreides II sets out on the Golden Path that will make him God Emperor."
+        },
+        {
+          "codigo": "A000",
+          "base_nativa": "AEbl",
+          "nome": "Prana-Bindu",
+          "niveis": 5,
+          "tooltip_curto": "The Fedaykin exercises total muscle and nerve control, summoning a massive burst of speed and accelerating faster than either enemy or ally can see.",
+          "descricao_nivel1": "The Fedaykin exercises total muscle and nerve control, summoning a massive burst of speed."
+        }
+      ]
+    },
+    {
+      "codigo": "H002",
+      "base_nativa": "Hmkg",
+      "nome_titulo": "Battlerager",
+      "nomes_proprios": [
+        "Thibbledorf Pwent"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "AOre",
+          "base_nativa": null,
+          "nome": "Reincarnation",
+          "niveis": 2,
+          "tooltip_curto": "When killed, the Battlerager will come back to life.",
+          "descricao_nivel1": "When killed, the Battlerager will come back to life. Reincarnation has a <AOre,Cool1> second cooldown."
+        },
+        {
+          "codigo": "A00D",
+          "base_nativa": "AHbh",
+          "nome": "Bash",
+          "niveis": 5,
+          "tooltip_curto": "Gives a chance that an attack will do bonus damage and stun an opponent.",
+          "descricao_nivel1": "Gives a <A00D:AHbh,DataA1>% chance that an attack will do <A00D:AHbh,DataC1> bonus damage and stun an opponent for <A00D:AHbh,Dur1> seconds."
+        },
+        {
+          "codigo": "A00Y",
+          "base_nativa": "Assp",
+          "nome": "Blaze of Glory",
+          "niveis": 5,
+          "tooltip_curto": "Allows the Battlerager to set off a number of explosives as he dies, destroying all nearby enemy units. His foes will learn to think twice before killing him.",
+          "descricao_nivel1": "Allows the Battlerager to set off an explosive as he dies, dealing.200 damage to nearby enemy units."
+        },
+        {
+          "codigo": "A00K",
+          "base_nativa": "AIll",
+          "nome": "Storm Hammer",
+          "niveis": 1,
+          "tooltip_curto": "Imbues the Battlerager's weapon with the power of the storm. His attacks gain a percentage chance of dealing an extra 100 points of damage to their targets. stunning them as well.",
+          "descricao_nivel1": "Imbues the Battlerager's weapon with the power of the storm. His attacks gain a percentage chance of dealing an extra 100 points of damage to their targets. stunning them as well."
+        },
+        {
+          "codigo": "A00E",
+          "base_nativa": "Absk",
+          "nome": "Battlerage",
+          "niveis": 5,
+          "tooltip_curto": "Causes the Battlerager to attack faster, but take more damage.",
+          "descricao_nivel1": "Causes the Battlerager to attack <A00E:Absk,DataB1,%>% faster, and take <A00EAbsk,DataC1,%>% more damage."
+        }
+      ]
+    },
+    {
+      "codigo": "N006",
+      "base_nativa": "Nbbc",
+      "nome_titulo": "Niten Ichi Ryu Master",
+      "nomes_proprios": [
+        "Miyamoto Musashi"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A01B",
+          "base_nativa": "AOmi",
+          "nome": "Symphony of Swords",
+          "niveis": 3,
+          "tooltip_curto": "Confuses the enemy by creating illusory doubles of the Niten Ichi Ryu Master and dispelling all magic from him.",
+          "descricao_nivel1": "Confuses the enemy by creating <A01B:AOmi,DataA1> illusory doubles of the Niten Ichi Ryu Master and dispelling all magic from him. Each double attacks with <A01B: AOmi,DataB1,%>% of the Master's strength and takes damage <A01B:AOmi,DataC1,%>% as fast. Lasts <A01B:AOmi,Dur1> seconds."
+        },
+        {
+          "codigo": "A00X",
+          "base_nativa": "AOww",
+          "nome": "Wind",
+          "niveis": 5,
+          "tooltip_curto": "\"Cutting down the enemy is the Way of strategy, and there is no need for many refinements of it.\" The Niten Ichi Ryu Master erupts into a storm of swords, rendering him immune to magic and dealing damage to nearby enemy land units.",
+          "descricao_nivel1": "\"Cutting down the enemy is the Way of strategy, and there is no need for many refinements of it.\" The Niten Ichi Ryu Master erupts into a storm of swords, rendering him immune to magic and dealing <A00X:AOww,DataA1> damage per second to nearby enemy land units. Lasts <A00X:AOww,Dur1> seconds."
+        },
+        {
+          "codigo": "A01J",
+          "base_nativa": "ANdb",
+          "nome": "Fire",
+          "niveis": 5,
+          "tooltip_curto": "\"The training for killing enemies is the meaning of life...and death.\" Gives a percent chance to avoid attacks and a chance to deal additional damage.",
+          "descricao_nivel1": "\"The training for killing enemies is the meaning of life...and death.\" Gives a <A01J:ANdb,DataD1,%>% chance to dodge an attack and a <A01J:ANdb,DataA1>% chance to deal <A01J:ANdb,DataB1> times normal damage."
+        },
+        {
+          "codigo": "A01I",
+          "base_nativa": "AOwk",
+          "nome": "Void",
+          "niveis": 5,
+          "tooltip_curto": "\"By knowing things that exist, you can know that which does not exist. That is the void.\" Allows the Niten Ichi Ryu Master to become invisible and move faster. When the Master attacks a unit to break invisibility, he deals bonus damage.",
+          "descricao_nivel1": "Allows the Niten Ichi Ryu Master to become invisible, and move <A01I:AOwk,DataB1,%>% faster for <A01I:AOwk,Dur1> seconds. If the Master attacks a unit to break invisibility, the attack will do <A01I:AOwk,DataC1> bonus damage."
+        }
+      ]
+    },
+    {
+      "codigo": "E002",
+      "base_nativa": "Emfr",
+      "nome_titulo": "Arch Druid",
+      "nomes_proprios": [
+        "Malfurion",
+        "Shan'do Stormrage"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A02O",
+          "base_nativa": "ANmo",
+          "nome": null,
+          "niveis": 3,
+          "tooltip_curto": "Calls a storm of lightning bolts to strike enemy units and buildings. Cooldown decreases 30 seconds each level",
+          "descricao_nivel1": "Calls down a storm of lightning to strike enemy units and buildings for <A02O:ANmo,DataA1> damage in a target area. Lasts <A02O:ANmo,Dur1> seconds. <A02O:ANmo,Cool1> second cooldown"
+        },
+        {
+          "codigo": "AIrl",
+          "base_nativa": null,
+          "nome": "Rejuvenation",
+          "niveis": 5,
+          "tooltip_curto": "Heals a target friendly unit's hit points over a period of time.",
+          "descricao_nivel1": "Heals a target friendly unit for 400 hit points over 10 seconds. If the unit is damaged while healing the effect is dispelled."
+        },
+        {
+          "codigo": "A00O",
+          "base_nativa": "Aroa",
+          "nome": "Roar",
+          "niveis": 5,
+          "tooltip_curto": "Gives nearby friendly units a bonus to damage and defence. Lasts <A00O:Aroa,Dur1> seconds.",
+          "descricao_nivel1": "Gives nearby friendly units a <A00O:Aroa,DataA1,%>% bonus to damage and a defense bonus of <A00O:Aroa,DataB1>. Lasts <A00O:Aroa,Dur1> seconds."
+        },
+        {
+          "codigo": "A021",
+          "base_nativa": "AEer",
+          "nome": "Entangling Roots",
+          "niveis": 5,
+          "tooltip_curto": "Causes roots to burst from the ground, immobilizing, disarming and damaging a target enemy temporarily.",
+          "descricao_nivel1": "Causes roots to burst from the ground, immobilizing and disarming a target enemy unit for .75 seconds, and dealing <A021:AEer,DataA1> damage per second."
+        }
+      ]
+    },
+    {
+      "codigo": "H006",
+      "base_nativa": "Hlgr",
+      "nome_titulo": "Inquisitor",
+      "nomes_proprios": [
+        "Brave Sir Robin",
+        "Ash"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A02M",
+          "base_nativa": "Aegr",
+          "nome": "Righteous Faith",
+          "niveis": 3,
+          "tooltip_curto": "Reduces the damage taken from spells and Magic attacks.",
+          "descricao_nivel1": "Reduces the damage taken from spells and Magic attacks to <A02M:Aegr,DataE1,%>%."
+        },
+        {
+          "codigo": "A012",
+          "base_nativa": "Aprg",
+          "nome": "Purify",
+          "niveis": 5,
+          "tooltip_curto": "The Inquisitor delivers a holy attack, purifying the spirit of a target unit and removing all magical effects from it; enemy units are slowed by a factor of <A012:Aprg,DataA1>. Deals damage to pagan idols (wards) and to magical creatures.",
+          "descricao_nivel1": "The Inquisitor delivers a holy attack, purifying the spirit of a target unit and removing all magical effects from it; enemy units are slowed by a factor of <A012:Aprg,DataA1>. Deals <A012:Aprg,DataC1> damage to pagan idols (wards) and to magical creatures."
+        },
+        {
+          "codigo": "A02T",
+          "base_nativa": "AHbn",
+          "nome": "Holy Ghost",
+          "niveis": 5,
+          "tooltip_curto": "Transubstantiates a target unit through the power of the Holy Ghost, slowing its movement speed; it cannot attack or be attacked, but is unnaturally vulnerable to magic while in this state of flux.",
+          "descricao_nivel1": "Transubstantiates a target unit through the power of the Holy Ghost, slowing its movement speed by <A02T:AHbn,DataA1,%>%; it cannot attack or be attacked, but is unnaturally vulnerable to magic while in this state of flux. Lasts <A02T:AHbn,Dur1> seconds (<A02T:AHbn,HeroDur1> seconds on Heroes)."
+        },
+        {
+          "codigo": "AHad",
+          "base_nativa": null,
+          "nome": "Inquisition",
+          "niveis": 5,
+          "tooltip_curto": "The Inquisitor clothes himself in negative magical energies that damage nearby enemies when they cast spells.",
+          "descricao_nivel1": "The Inquisitor clothes himself in negative magical energies that damage nearby enemies when they cast spells. Deals 33% of the mana spent on a spell to its caster as damage."
+        }
+      ]
+    },
+    {
+      "codigo": "N008",
+      "base_nativa": "Npbm",
+      "nome_titulo": "Drunken Master",
+      "nomes_proprios": [
+        "Yogi Mitsu",
+        "Wong Fei Hong",
+        "Chen Zhen from Jing Wu"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A026",
+          "base_nativa": "ANbf",
+          "nome": "Breath of Fire",
+          "niveis": 5,
+          "tooltip_curto": "Breathes a cone of fire at enemy units which deals damage. Units that have Drunken Haze on them will ignite and take burn damage over time.",
+          "descricao_nivel1": "Breathes a cone of fire at enemy units, dealing <A026:ANbf,DataA1> initial damage. Units that have Drunken Haze on them will ignite and burn for <A026:ANbf,DataE1> damage per second over <A026:ANbf,Dur1> seconds."
+        },
+        {
+          "codigo": "A028",
+          "base_nativa": "ANdh",
+          "nome": "Drunken Haze",
+          "niveis": 5,
+          "tooltip_curto": "Drenches enemy units in alcohol, causing their movement speed to be reduced, and have a chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage over time.",
+          "descricao_nivel1": "Drenches enemy units in alcohol, causing their movement speed to be reduced by <A028:ANdh,DataC1,%>%, and have a <A028:ANdh,DataB1,%>% chance to miss on attacks. When units with Drunken Haze cast on them are hit by Breath of Fire, they will ignite and take burn damage."
+        },
+        {
+          "codigo": "A027",
+          "base_nativa": "ANdb",
+          "nome": "Drunken Brawler",
+          "niveis": 5,
+          "tooltip_curto": "Gives a percent chance to avoid attacks and a chance to deal additional damage.",
+          "descricao_nivel1": "Gives a <A027:ANdb,DataD1,%>% chance to dodge an attack and a <A027:ANdb,DataA1>% chance to deal <A027:ANdb,DataB1> times normal damage."
+        },
+        {
+          "codigo": "A02A",
+          "base_nativa": "Acef",
+          "nome": "Storm Earth And Fire",
+          "niveis": 3,
+          "tooltip_curto": "Splits the Drunken Master into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn.",
+          "descricao_nivel1": "Splits the Drunken Master into elements, forming 3 specialized warriors. If any of them survive until the end of their summoned timer, the Brewmaster is reborn."
+        }
+      ]
+    },
+    {
+      "codigo": "H007",
+      "base_nativa": "Hapm",
+      "nome_titulo": "Pirate",
+      "nomes_proprios": [
+        "Cervantes de Leon"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A007",
+          "base_nativa": "ANst",
+          "nome": "Spirit of the Adrian",
+          "niveis": 3,
+          "tooltip_curto": "Calls on Cervantes' ship The Adrian to eliminate enemies in a large area.",
+          "descricao_nivel1": "Calls on Cervantes' ship The Adrian to eliminate enemies in a large area. The Adrian deals <A007:ANst,DataC1> damage."
+        },
+        {
+          "codigo": "A009",
+          "base_nativa": "AOae",
+          "nome": "Quicksand Aura",
+          "niveis": 5,
+          "tooltip_curto": "Decreases the attack rate of nearby enemy units.",
+          "descricao_nivel1": "Decreases nearby enemy units' attack rate by <A009:AOae,DataB1,%>%."
+        },
+        {
+          "codigo": "A002",
+          "base_nativa": "Aslp",
+          "nome": "Summon Crustaceans",
+          "niveis": 5,
+          "tooltip_curto": "Summons a number of crabs to do Cervantes' bidding.",
+          "descricao_nivel1": "Summons <A002:Aslp,DataA1> Spider Crabs to do Cervantes' bidding. Lasts <A002:Aslp,Dur1> seconds."
+        },
+        {
+          "codigo": "AUdc",
+          "base_nativa": null,
+          "nome": "Jolly Roger Hoist",
+          "niveis": 5,
+          "tooltip_curto": "Cervantes teleports high into the air above his opponent, lunging down at him with incredible speed.",
+          "descricao_nivel1": "Cervantes teleports high into the air above his opponent, lunging down at him with incredible speed. Deals 75 damage to the target."
+        }
+      ]
+    },
+    {
+      "codigo": "E005",
+      "base_nativa": "Ewar",
+      "nome_titulo": null,
+      "nomes_proprios": null,
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "AHmt",
+          "base_nativa": null,
+          "nome": "Warp",
+          "niveis": 3,
+          "tooltip_curto": "Warps the Warden to any allied unit or building.",
+          "descricao_nivel1": "Instantaneously warps the Warden to any allied unit or building."
+        },
+        {
+          "codigo": "A01Y",
+          "base_nativa": "AEbl",
+          "nome": "Blink",
+          "niveis": 5,
+          "tooltip_curto": "Short distance teleportation that allows the Warden to move in and out of combat.",
+          "descricao_nivel1": "Teleports the Warden a short distance, allowing her to move in and out of combat."
+        },
+        {
+          "codigo": "A01X",
+          "base_nativa": "AEfk",
+          "nome": "Fan of Knives",
+          "niveis": 5,
+          "tooltip_curto": "The Warden hurls a flurry of knives, damaging nearby enemies.",
+          "descricao_nivel1": "The Warden hurls a flurry of knives, damaging nearby enemies. Each knife does <A01X:AEfk,DataA1> damage."
+        },
+        {
+          "codigo": "A01Z",
+          "base_nativa": "AEsh",
+          "nome": "Shadow Strike",
+          "niveis": 5,
+          "tooltip_curto": "Hurls a poisoned dagger which deals large initial damage, and then deals damage over time. The poisoned unit has its attack and movement rate slowed for a short duration.",
+          "descricao_nivel1": "Hurls a poisoned dagger at a target enemy unit, dealing <A01Z:AEsh,DataE1> initial damage, and <A01Z:AEsh,DataA1> damage every <A01Z:AEsh,Cast1> seconds for <A01Z:AEsh,Dur1> seconds. The poison slows the attack rate and movement speed of the targeted unit for a short duration."
+        }
+      ]
+    },
+    {
+      "codigo": "H008",
+      "base_nativa": "Hblm",
+      "nome_titulo": "Disciple of the Moon",
+      "nomes_proprios": null,
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A00U",
+          "base_nativa": "AUau",
+          "nome": "Gravity Well",
+          "niveis": 5,
+          "tooltip_curto": "Catches nearby enemy units in the Disciple's gravity well, slowing their movement and slowly draining their life.",
+          "descricao_nivel1": "Catches nearby enemy units in the Disciple's gravity well, slowing their movement speed by <A00U:AUau,DataA1,%>% and draining their life by <A00U:AUau,DataB1> per second. (*some increases are not shown but do effect gameplay)"
+        },
+        {
+          "codigo": "A00F",
+          "base_nativa": "ANsb",
+          "nome": "Call the Moon",
+          "niveis": 5,
+          "tooltip_curto": "Calls down a chunk of the moon, dealing damage and stunning the target.",
+          "descricao_nivel1": "Calls down a chunk of the moon, dealing <A00F:ANsb,DataA1> damage and stunning the target for <A00F:ANsb,Dur1> seconds."
+        },
+        {
+          "codigo": "A008",
+          "base_nativa": "ANst",
+          "nome": "Lunar Tide",
+          "niveis": 5,
+          "tooltip_curto": "Unleashes torrents of water upon the Disciple's enemies.",
+          "descricao_nivel1": "Unleashes torrents of water upon the Disciple's enemies. Each crashing wave deals <A008:ANst,DataC1> damage. <A008:ANst,DataA1> waves per second. Lasts <A008:ANst,Dur1> seconds."
+        },
+        {
+          "codigo": "A01H",
+          "base_nativa": "ANr3",
+          "nome": "Call The Sky",
+          "niveis": 3,
+          "tooltip_curto": "Calls down a storm of meteors that explode on the Disciple's enemies. Each meteor deals 50 damage. Cooldown decreases 30 seconds each level.",
+          "descricao_nivel1": "Calls down a storm of meteors that explode on the Disciple's enemies. Each meteor deals 50 damage. Lasts 20 seconds."
+        }
+      ]
+    },
+    {
+      "codigo": "O00A",
+      "base_nativa": "Oshd",
+      "nome_titulo": "Scion of the Storm",
+      "nomes_proprios": [
+        "Aeolus"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A01S",
+          "base_nativa": "ANto",
+          "nome": "Tornado",
+          "niveis": 3,
+          "tooltip_curto": "Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings.",
+          "descricao_nivel1": "Summons a fierce controllable Tornado that slows enemy units' movement speed, randomly tosses enemy ground units into the air and damages enemy buildings. Lasts <A01S:ANto,Dur1> seconds."
+        },
+        {
+          "codigo": "A02F",
+          "base_nativa": "Aclf",
+          "nome": "In Tenebris",
+          "niveis": 5,
+          "tooltip_curto": "Cast on enemy units and buildings to bury them in darkness, forcing them to move cautiously and blinding their attacks. Does not affect heroes",
+          "descricao_nivel1": "Cast on enemy units and buildings to bury them in darkness, forcing them to move cautiously and blinding their attacks <A02F:Aclf,DataB1,%>% of the time. Does not affect heroes Lasts <A02F:Aclf,Dur1> seconds."
+        },
+        {
+          "codigo": "A02Y",
+          "base_nativa": "Aens",
+          "nome": "Cavea Ventorum",
+          "niveis": 5,
+          "tooltip_curto": "Binds a target enemy unit in a cage of winds so that it cannot move. This prison cannot be dispelled.",
+          "descricao_nivel1": "Binds a target enemy unit in a cage of winds so that it cannot move for <A02Y:Aens,Dur1> seconds. This prison cannot be dispelled, and does not prevent the unit from attacking or being attacked."
+        },
+        {
+          "codigo": "A02S",
+          "base_nativa": "ANr3",
+          "nome": "Call Lightning",
+          "niveis": 5,
+          "tooltip_curto": "Calls down bolts of lightning from the sky, damaging enemy units and buildings in the area of effect.",
+          "descricao_nivel1": "Calls down <A02S:ANr3,DataB1> bolt of lightning from the sky, dealing 75 damage to enemy units and buildings in the area of effect."
+        }
+      ]
+    },
+    {
+      "codigo": "U002",
+      "base_nativa": "Ucrl",
+      "nome_titulo": null,
+      "nomes_proprios": null,
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A01W",
+          "base_nativa": "AUls",
+          "nome": "Locust Swarm",
+          "niveis": 3,
+          "tooltip_curto": null,
+          "descricao_nivel1": "Creates a swarm of angry locusts that bite and tear at nearby enemy units. As they chew the enemy flesh, they convert it into a substance that restores hit points to the Crypt Lord when they return."
+        },
+        {
+          "codigo": "A01U",
+          "base_nativa": "AUim",
+          "nome": "Impale",
+          "niveis": 5,
+          "tooltip_curto": "Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line, dealing damage and hurling enemy ground units into the air in their wake.",
+          "descricao_nivel1": "Slams the ground with the Crypt Lord's massive claws, shooting spiked tendrils out in a straight line, dealing <A01U:AUim,DataC1> damage and hurling enemy ground units into the air in their wake, stunning them for <A01U:AUim,Dur1> seconds."
+        },
+        {
+          "codigo": "A01V",
+          "base_nativa": "AUcb",
+          "nome": "Carrion Beetles",
+          "niveis": 5,
+          "tooltip_curto": "The Crypt Lord progenerates Carrion Beetles from a target corpse to attack his enemies. Beetles are permanent, but only a small number can be maintained at any given time.",
+          "descricao_nivel1": "Progenerates <A01V:AUcb,DataA1> Beetle from a target corpse. Beetles have <u006:ucs1,realHP> hit points, and deal <u006:ucs1,mindmg1> - <u006:ucs1,maxdmg1> damage. Beetles are permanent until killed. Maximum of <A01V:AUcb,DataE1> Beetles."
+        },
+        {
+          "codigo": "A01T",
+          "base_nativa": "AUts",
+          "nome": "Spiked Carapace",
+          "niveis": 5,
+          "tooltip_curto": "The Crypt Lord forms barbed layers of chitinous armor that increase its defense and return damage to enemy melee attackers.",
+          "descricao_nivel1": "Enhances the Crypt Lord's chitinous armor with organic barbs, giving the Crypt Lord <A01T:AUts,DataC1> bonus armor and returning <A01T:AUts,DataA1,%>% of melee attack damage to enemies."
+        }
+      ]
+    },
+    {
+      "codigo": "N007",
+      "base_nativa": "Nmag",
+      "nome_titulo": "Corpse King",
+      "nomes_proprios": [
+        "Jimmy"
+      ],
+      "atributo_primario": null,
+      "str_base": 30,
+      "agi_base": 11,
+      "int_base": 12,
+      "spells": [
+        {
+          "codigo": "A02N",
+          "base_nativa": "Aamk",
+          "nome": "Unholy Strength",
+          "niveis": 2,
+          "tooltip_curto": "Gives a permanent bonus of 7 to Strength with each level taken.",
+          "descricao_nivel1": "Gives a permanent bonus of 7 to Strength with each level taken."
+        },
+        {
+          "codigo": "A02W",
+          "base_nativa": "AUcs",
+          "nome": "Leave it to Cleaver",
+          "niveis": 5,
+          "tooltip_curto": "Jimmy heaves his bloody cleaver forth, painting the battlefield with his enemies' gore.",
+          "descricao_nivel1": "Jimmy heaves his bloody cleaver forth, dealing <A02W:AUcs,DataA1> damage to each enemy it comes into contact with and painting the battlefield with their gore."
+        },
+        {
+          "codigo": "A01N",
+          "base_nativa": "Adev",
+          "nome": "Jimmy Eat World",
+          "niveis": 3,
+          "tooltip_curto": "Consumes an enemy hero, slowly digesting it and dealing 75 damage per second to it. If Jimmy is killed while the consumed hero is still digesting, that hero will be released. <A01N:Adev,Cool1> second cooldown.",
+          "descricao_nivel1": "Consumes an enemy hero, slowly digesting it and dealing 75 damage per second to it. If Jimmy is killed while the consumed hero is still digesting, that hero will be released. <A01N:Adev,Cool1> second cooldown."
+        },
+        {
+          "codigo": "A01M",
+          "base_nativa": "ANca",
+          "nome": "The Cleave",
+          "niveis": 5,
+          "tooltip_curto": "Jimmy strikes with such force that he damages multiple enemies with his attacks.",
+          "descricao_nivel1": "Jimmy strikes with such force that <A01M:ANca,DataA1,%>% of his damage strikes through to nearby enemies."
+        },
+        {
+          "codigo": "A01L",
+          "base_nativa": "Acn2",
+          "nome": "Cannibalize",
+          "niveis": 5,
+          "tooltip_curto": "Consumes a nearby corpse, healing Jimmy.",
+          "descricao_nivel1": "Consumes a nearby corpse to heal <A01L:Acn2,DataA1> hit points per second."
+        }
+      ]
+    },
+    {
+      "codigo": "N00J",
+      "base_nativa": "Nklj",
+      "nome_titulo": null,
+      "nomes_proprios": [
+        "Mephistopheles"
+      ],
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A00Z",
+          "base_nativa": "AOsw",
+          "nome": "The Red Death",
+          "niveis": 3,
+          "tooltip_curto": "Calls forth the specter of The Red Death to harvest the souls of the Warlock's enemies. Cooldown decreases 30 seconds each level\"",
+          "descricao_nivel1": "Calls forth the specter of The Red Death. \"Entertain the hope that somehow you'll escape me, Weld your bolts and lock your iron gates, Drink deeply the illusion of your safety, My how wishful thoughts inebriate.\" Lasts <A00Z:AOsw,Dur1> seconds."
+        },
+        {
+          "codigo": "A01C",
+          "base_nativa": "Advm",
+          "nome": "Devour Magic",
+          "niveis": 5,
+          "tooltip_curto": "Consumes all magical buffs from units in an area. Each unit that is devoured of magic gives the Warlock hit points and mana. Deals damage to summoned units.",
+          "descricao_nivel1": "Consumes all magical buffs from units in an area. Each buff that is devoured of magic gives the Warlock <A01C:Advm,DataC1> hit points. Deals <A01C:Advm,DataE1> damage to summoned units."
+        },
+        {
+          "codigo": "A013",
+          "base_nativa": "Ahea",
+          "nome": "Open Wounds",
+          "niveis": 5,
+          "tooltip_curto": "Opens the wounds of a target damaged unit, dealing 15 additional damage to it each second per level.",
+          "descricao_nivel1": ""
+        },
+        {
+          "codigo": "A00H",
+          "base_nativa": "Arai",
+          "nome": "Corpse Explosion",
+          "niveis": 5,
+          "tooltip_curto": "Causes nearby corpses to combust, dealing 300 damage to enemy units. Cooldown decreases 1.5 seconds each level",
+          "descricao_nivel1": "Causes nearby corpses to combust, dealing 300 damage to nearby enemy units. <A00H:Arai,Cool1> second cooldown."
+        }
+      ]
+    },
+    {
+      "codigo": "N00K",
+      "base_nativa": "Nbrn",
+      "nome_titulo": null,
+      "nomes_proprios": null,
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A01P",
+          "base_nativa": "ANsi",
+          "nome": "Silence",
+          "niveis": 5,
+          "tooltip_curto": "Stops all enemies in a target area from casting spells. The area of effect and duration increase with level.",
+          "descricao_nivel1": "Stops all enemies in a small target area from casting spells for <A01P:ANsi,HeroDur1> seconds."
+        },
+        {
+          "codigo": "A02B",
+          "base_nativa": "ANdr",
+          "nome": "Life Drain",
+          "niveis": 5,
+          "tooltip_curto": "Absorbs the life essence of a target enemy unit by taking hit points from it every second and giving them to the Dark Ranger.",
+          "descricao_nivel1": "Absorbs the life essence of a target enemy unit by taking <A02B:ANdr,DataA1> hit points per second from it and giving them to the Dark Ranger. Lasts <A02B:ANdr,Dur1> seconds."
+        },
+        {
+          "codigo": "A015",
+          "base_nativa": "ANch",
+          "nome": "Charm",
+          "niveis": 3,
+          "tooltip_curto": "Takes control of a target enemy unit. Charm cannot be used on Heroes, or creeps above level <A015:ANch,DataA1>. Cooldown decreases 20 seconds each level",
+          "descricao_nivel1": "Takes control of a target enemy unit. Charm cannot be used on Heroes, or creeps above level <A015:ANch,DataA1>. <A015:ANch,Cool1> second cooldown."
+        },
+        {
+          "codigo": "A01K",
+          "base_nativa": "ANba",
+          "nome": "Black Arrow",
+          "niveis": 5,
+          "tooltip_curto": "Adds extra damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons.",
+          "descricao_nivel1": "Adds <A01KANba,DataA1> bonus damage to attacks. Units killed while under the effect of Black Arrow will turn into skeletons."
+        }
+      ]
+    },
+    {
+      "codigo": "O00B",
+      "base_nativa": "Orkn",
+      "nome_titulo": null,
+      "nomes_proprios": null,
+      "atributo_primario": null,
+      "str_base": null,
+      "agi_base": null,
+      "int_base": null,
+      "spells": [
+        {
+          "codigo": "A02C",
+          "base_nativa": "AOvd",
+          "nome": "Big Bad Voodoo",
+          "niveis": 3,
+          "tooltip_curto": "Turns all friendly units invulnerable in an area around the Shadow Hunter.",
+          "descricao_nivel1": "Turns all friendly units invulnerable in an area around the Shadow Hunter. The Shadow Hunter does not turn invulnerable. Lasts <A02C:AOvd,Dur1> seconds."
+        },
+        {
+          "codigo": "A02L",
+          "base_nativa": "AOhw",
+          "nome": "Healing Wave",
+          "niveis": 5,
+          "tooltip_curto": "Calls forth a wave of energy that heals a target and bounces to nearby friendlies. Each bounce heals less damage.",
+          "descricao_nivel1": "Calls forth a wave of healing energy that bounces up to <A02L:AOhw,DataB1> times, healing <A02L:AOhw,DataA1> damage on the primary target. Each jump heals less damage."
+        },
+        {
+          "codigo": "A014",
+          "base_nativa": "Asta",
+          "nome": "Ethereal Mine",
+          "niveis": 5,
+          "tooltip_curto": "Summons an ethereal landmine that stuns enemy land units around it while it deals damage to them.. The trap activates when an enemy land unit approaches and destroys all other mines in its area of effect. Destroying the mine avoids the stun effect but causes it to explode, dealing its damage",
+          "descricao_nivel1": "Summons an ethereal landmine that stuns enemy land units for <A014:Asta,DataD1> seconds while dealing <A01A:Amnz,DataB1> damage. Destroying the mine causes it to explode, dealing it's area of effect damage"
+        },
+        {
+          "codigo": "A010",
+          "base_nativa": "Ahwd",
+          "nome": "Pain Ward",
+          "niveis": 5,
+          "tooltip_curto": "Summons a ward that inflicts agonizing pain on nearby enemy non-mechanical units, dealing them damage per second. Lasts <A010:Ahwd,Dur1> seconds.",
+          "descricao_nivel1": "Summons a ward that inflicts agonizing pain on nearby enemy non-mechanical units, dealing them <A030:Aap2,DataB1> damage per second. Lasts <A010:Ahwd,Dur1> seconds."
+        }
+      ]
+    }
+  ]
+}
