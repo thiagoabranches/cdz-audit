@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Dashboard CDZ — X Hero Reborn</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #0d1117; color: #e6edf3;
+    line-height: 1.5; font-size: 14px;
+  }
+  header {
+    background: #161b22; border-bottom: 1px solid #30363d;
+    padding: 16px 24px; position: sticky; top: 0; z-index: 10;
+  }
+  h1 { font-size: 18px; margin-bottom: 4px; }
+  .meta { font-size: 12px; color: #8b949e; }
+  .meta code { color: #58a6ff; font-size: 11px; }
+
+  .resumo {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px; padding: 20px 24px;
+  }
+  .card {
+    background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+    padding: 16px; cursor: pointer; transition: all .15s;
+  }
+  .card:hover { border-color: #58a6ff; }
+  .card.ativo { border-color: #58a6ff; background: #1f242c; }
+  .card .label { font-size: 12px; color: #8b949e; margin-bottom: 6px; }
+  .card .num { font-size: 26px; font-weight: 600; }
+  .card .num.vermelho { color: #f85149; }
+  .card .num.amarelo { color: #d29922; }
+  .card .num.verde { color: #3fb950; }
+  .card .sub { font-size: 11px; color: #6e7681; margin-top: 4px; }
+
+  .tabs {
+    display: flex; gap: 4px; padding: 0 24px; border-bottom: 1px solid #30363d;
+    overflow-x: auto;
+  }
+  .tab {
+    padding: 10px 16px; cursor: pointer; color: #8b949e;
+    border-bottom: 2px solid transparent; white-space: nowrap;
+    font-size: 13px;
+  }
+  .tab:hover { color: #e6edf3; }
+  .tab.ativo { color: #58a6ff; border-bottom-color: #58a6ff; }
+
+  .conteudo { padding: 16px 24px 40px; }
+  .filtros {
+    display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap;
+  }
+  .filtros input, .filtros select {
+    background: #0d1117; border: 1px solid #30363d; color: #e6edf3;
+    padding: 8px 12px; border-radius: 6px; font-size: 13px;
+    font-family: inherit;
+  }
+  .filtros input { flex: 1; min-width: 200px; }
+  .filtros input:focus, .filtros select:focus { outline: none; border-color: #58a6ff; }
+
+  table { width: 100%; border-collapse: collapse; }
+  th, td {
+    text-align: left; padding: 8px 12px;
+    border-bottom: 1px solid #21262d; font-size: 13px;
+    vertical-align: top;
+  }
+  th {
+    background: #161b22; color: #8b949e; font-weight: 500;
+    font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px;
+    position: sticky; top: 65px; z-index: 5;
+  }
+  tr:hover td { background: #161b22; }
+  tr.linha-erro td:first-child { border-left: 3px solid #f85149; }
+  tr.linha-atencao td:first-child { border-left: 3px solid #d29922; }
+  tr.linha-ok td:first-child { border-left: 3px solid #3fb950; }
+
+  .tag {
+    display: inline-block; padding: 1px 8px; border-radius: 10px;
+    font-size: 11px; font-weight: 500;
+  }
+  .tag-erro { background: rgba(248,81,73,.15); color: #f85149; }
+  .tag-atencao { background: rgba(210,153,34,.15); color: #d29922; }
+  .tag-ok { background: rgba(63,185,80,.15); color: #3fb950; }
+  .tag-neutro { background: #21262d; color: #8b949e; }
+
+  .codigo { font-family: "SF Mono", Consolas, monospace; color: #79c0ff; font-size: 12px; }
+  .mono { font-family: "SF Mono", Consolas, monospace; font-size: 12px; color: #8b949e; }
+  .heroi { color: #d2a8ff; }
+  .termo { color: #f85149; }
+  .subst { color: #3fb950; }
+
+  .vazio { padding: 40px; text-align: center; color: #6e7681; }
+  .contador { color: #8b949e; font-size: 12px; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Dashboard CDZ — X Hero Reborn</h1>
+  <div class="meta">
+    Mapa: <code>X_Hero_Reborn_TESTE_TODOS_HEROIS.w3x</code> ·
+    SHA256: <code>b1b6835929fe...</code> ·
+    Gerado em <span id="data-geracao"></span>
+  </div>
+</header>
+
+<div class="resumo" id="resumo"></div>
+<div class="tabs" id="tabs"></div>
+<div class="conteudo" id="conteudo"></div>
+
+<script>
+const DADOS = {"__gerado": "25/09/2026 00:38", "auditoria_base": [{"status": "ATENCAO", "codigo": "A00A", "heroi": "Mu", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Starlight Extinction", "atual": "Mu strikes surrounding enemies with bright beams of light. |n|n|cffffcc00Level 1"}, {"status": "ATENCAO", "codigo": "A097", "heroi": "Mu", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Crystal Wall", "atual": "Mu's holy power greatly increases defense and health regeneration for himself an"}, {"status": "ATENCAO", "codigo": "AHad", "heroi": "Mu", "campo": "aub1", "nivel": "1", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHad", "heroi": "Mu", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHad", "heroi": "Mu", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHad", "heroi": "Mu", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Restoration", "atual": "Increase the protection of friendly troops nearby. |n|n|cffffcc00Level 1|r - Inc"}, {"status": "ATENCAO", "codigo": "AUau", "heroi": "Shion", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Cosmic Endurance", "atual": "Shion increases his vitality, gaining a bonus to his health regeneration rate. |"}, {"status": "ATENCAO", "codigo": "AHtc", "heroi": "Shion", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Psionic Move", "atual": "Shion smashes the ground with his hammer, causing enemies to take some damage an"}, {"status": "ERRO", "codigo": "AHbh", "heroi": "Shion", "campo": "anam", "nivel": "-", "esperado": "Energy Shield", "atual": "Lyra's Harmony"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "alev (nivel real com dado)", "nivel": "-", "esperado": "8", "atual": "1"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "1", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "2", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "3", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "4", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "5", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "6", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "7", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "atp1", "nivel": "8", "esperado": "contem \"Energy Shield", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "aub1", "nivel": "4", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "aub1", "nivel": "5", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "aub1", "nivel": "6", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "aub1", "nivel": "7", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHbh", "heroi": "Shion", "campo": "aub1", "nivel": "8", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AHav", "heroi": "Shion", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Stardust Revolution", "atual": "Shion increases his combat skills and also becomes immune to magic. Action time "}, {"status": "ATENCAO", "codigo": "A08L", "heroi": "Aldebaran", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Great Horn", "atual": "A powerful blow to the target enemy, stunning them for 3 seconds and dealing sig"}, {"status": "ATENCAO", "codigo": "A07M", "heroi": "Aldebaran", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Taurus Impact", "atual": "Aldebaran slams the ground with great force, sending out explosive waves in all "}, {"status": "ATENCAO", "codigo": "A084", "heroi": "Aldebaran", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Defensive Stance", "atual": "Aldebaran improves his armor and becomes stronger. |n|n|cffffcc00Level 1|r - 100"}, {"status": "ATENCAO", "codigo": "A07D", "heroi": "Aldebaran", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Cosmo Resistance", "atual": "Aldebaran resists magic, reducing magical damage taken. |n|n|cffffcc00Level 1|r "}, {"status": "ATENCAO", "codigo": "A07E", "heroi": "Aldebaran", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Unstoppable Strength", "atual": "Aldebaran transforms into his ultimate form, gaining increased combat and moveme"}, {"status": "ATENCAO", "codigo": "A00K", "heroi": "Saga", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Satan Imperial", "atual": "The hero directs a beam of negative energy at the enemy, which deals significant"}, {"status": "ATENCAO", "codigo": "AEim", "heroi": "Saga", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Other Side", "atual": "Saga is engulfed in flames that burn his foes. The area of \\u200b\\u200beffect increases wi"}, {"status": "ATENCAO", "codigo": "AEev", "heroi": "Saga", "campo": "aub1", "nivel": "1", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AEev", "heroi": "Saga", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AEev", "heroi": "Saga", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AEev", "heroi": "Saga", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Labirinto de Gemeos e Ilusionismo", "atual": "Saga gains a chance to dodge enemy attacks. |n|n|cffffcc00Level 1|r - <AEev,Data"}, {"status": "ATENCAO", "codigo": "A0BB", "heroi": "Saga", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Another Dimension", "atual": "Creates a clone of the target friendly hero, dealing and taking 100% of normal d"}, {"status": "ATENCAO", "codigo": "AEme", "heroi": "Saga", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Bencao da Deusa da Sabedoria", "atual": "Saga transforms, gaining the ability to attack opponents from a distance. It als"}, {"status": "ATENCAO", "codigo": "AUcs", "heroi": "DeathMask", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Darkworld Waves", "atual": "DeathMask sends a swarm of bats at enemies, dealing damage to all enemies in its"}, {"status": "ATENCAO", "codigo": "A00H", "heroi": "DeathMask", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Chilling Scream", "atual": "DeathMask lets out a terrifying scream that causes opponents to lose some of the"}, {"status": "ATENCAO", "codigo": "AUin", "heroi": "DeathMask", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Swarm of Spirits", "atual": "A fiery golem falls from the sky, fighting on the side of the hero. The golem ta"}, {"status": "ATENCAO", "codigo": "AUav", "heroi": "DeathMask", "campo": "aub1", "nivel": "1", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AUav", "heroi": "DeathMask", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AUav", "heroi": "DeathMask", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "AUav", "heroi": "DeathMask", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Vampiric Aura", "atual": "Nearby friendly troops gain additional health for each melee hit inflicted on th"}, {"status": "ATENCAO", "codigo": "A03H", "heroi": "Aioria", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Lightning Bolt", "atual": "Using electrical energy, Aioria drains the life and magical power from the targe"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "1", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "4", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "5", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "6", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "7", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "aub1", "nivel": "8", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A03I", "heroi": "Aioria", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Lightning Plasma", "atual": "An electric field is created around the hero, which deals damage to all enemies "}, {"status": "ATENCAO", "codigo": "AOcl", "heroi": "Aioria", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Lion\\'s Fury", "atual": "An electric shock that hits multiple enemies in sequence. The number of targets "}, {"status": "ATENCAO", "codigo": "ANfl", "heroi": "Shaka", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Photon Burst", "atual": "A bolt of lightning that hits up to 16 enemies at once. |n|n|cffffcc00Level 1|r "}, {"status": "ATENCAO", "codigo": "A049", "heroi": "Shaka", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Tenma Kofuku", "atual": "Enemies in the target area are electrocuted, briefly stunned and damaged, and sl"}, {"status": "ATENCAO", "codigo": "A042", "heroi": "Shaka", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Ohm", "atual": "Shaka enchants his glaives in such a way that each time they strike, they burn t"}, {"status": "ATENCAO", "codigo": "ANhx", "heroi": "Shaka", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Tenbu Horin", "atual": "Transforms the target enemy unit into a random animal. In this case, the warrior"}, {"status": "ATENCAO", "codigo": "Arsw", "heroi": "Shaka", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Tenku Haja Chimimoryo", "atual": "Summons 4 Spirit Ziggurats that stay at the target location and attack all enemi"}, {"status": "ATENCAO", "codigo": "A044", "heroi": "Shaka", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Rikudo Rinne", "atual": "Summons an invulnerable Lightning Spirit to fight for you for 60 seconds. |n|n|c"}, {"status": "ATENCAO", "codigo": "A08Z", "heroi": "Milo", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Scarlet Needle: Antares", "atual": "Milo unleashes 20 souls around him, each of which deals damage to all nearby ene"}, {"status": "ATENCAO", "codigo": "A07T", "heroi": "Milo", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A07T", "heroi": "Milo", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A07T", "heroi": "Milo", "campo": "aub1", "nivel": "4", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A07T", "heroi": "Milo", "campo": "aub1", "nivel": "5", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A07T", "heroi": "Milo", "campo": "aub1", "nivel": "6", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A07T", "heroi": "Milo", "campo": "aub1", "nivel": "7", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A07T", "heroi": "Milo", "campo": "aub1", "nivel": "8", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08R", "heroi": "Milo", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08R", "heroi": "Milo", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08R", "heroi": "Milo", "campo": "aub1", "nivel": "4", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08R", "heroi": "Milo", "campo": "aub1", "nivel": "5", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08R", "heroi": "Milo", "campo": "aub1", "nivel": "6", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08R", "heroi": "Milo", "campo": "aub1", "nivel": "7", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08R", "heroi": "Milo", "campo": "aub1", "nivel": "8", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A087", "heroi": "Milo", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Terrifying Presence", "atual": "Milo instills fear into his opponents, making their attacks less effective. |n|n"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "alev (nivel real com dado)", "nivel": "-", "esperado": "1", "atual": "8"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "aub1", "nivel": "2", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "aub1", "nivel": "3", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "aub1", "nivel": "4", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "aub1", "nivel": "5", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "aub1", "nivel": "6", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "aub1", "nivel": "7", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A090", "heroi": "Milo", "campo": "aub1", "nivel": "8", "esperado": "(preenchido, nao vazio)", "atual": "(vazio)"}, {"status": "ATENCAO", "codigo": "A08H", "heroi": "Shina", "campo": "arut", "nivel": "-", "esperado": "relacionado a \"Thunder Claw", "atual": "Shina marks the target enemy, greatly reducing their defense. |nThe duration is "}], "lote4": [{"status": "ERRO", "codigo": "AHav", "campo": "aub1", "nivel": "1", "termo": "Nome King", "substituto": "Shion"}, {"status": "ERRO", "codigo": "AHav", "campo": "aub1", "nivel": "3", "termo": "Nome King", "substituto": "Shion"}, {"status": "ERRO", "codigo": "AHav", "campo": "aub1", "nivel": "4", "termo": "Nome King", "substituto": "Shion"}, {"status": "ERRO", "codigo": "AOwk", "campo": "aub1", "nivel": "1", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "AOwk", "campo": "aub1", "nivel": "2", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "AOwk", "campo": "aub1", "nivel": "3", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "AOwk", "campo": "aub1", "nivel": "5", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "AOwk", "campo": "aub1", "nivel": "6", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "AOwk", "campo": "aub1", "nivel": "7", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "AOwk", "campo": "aub1", "nivel": "8", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "AEim", "campo": "aub1", "nivel": "2", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEim", "campo": "aub1", "nivel": "3", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEim", "campo": "aub1", "nivel": "1", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEim", "campo": "aub1", "nivel": "5", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEim", "campo": "aub1", "nivel": "6", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEim", "campo": "aub1", "nivel": "7", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEim", "campo": "aub1", "nivel": "8", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEme", "campo": "aub1", "nivel": "1", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEme", "campo": "aub1", "nivel": "3", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "AEme", "campo": "aub1", "nivel": "4", "termo": "Demon Hunter", "substituto": "Saga"}, {"status": "ERRO", "codigo": "A00A", "campo": "aub1", "nivel": "3", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A00A", "campo": "aub1", "nivel": "4", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A00A", "campo": "aub1", "nivel": "1", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A00A", "campo": "aub1", "nivel": "5", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A00A", "campo": "aub1", "nivel": "6", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A00A", "campo": "aub1", "nivel": "7", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A00A", "campo": "aub1", "nivel": "8", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A01P", "campo": "aub1", "nivel": "1", "termo": "knight", "substituto": "?"}, {"status": "ERRO", "codigo": "A01P", "campo": "aub1", "nivel": "1", "termo": "death knight", "substituto": "?"}, {"status": "ERRO", "codigo": "A00S", "campo": "atp1", "nivel": "1", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A01C", "campo": "aub1", "nivel": "1", "termo": "dreadlord", "substituto": "DeathMask"}, {"status": "ERRO", "codigo": "A035", "campo": "aub1", "nivel": "1", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A035", "campo": "aub1", "nivel": "3", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A035", "campo": "aub1", "nivel": "2", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A03H", "campo": "aub1", "nivel": "2", "termo": "Lightning Queen", "substituto": "Aioria"}, {"status": "ERRO", "codigo": "A03H", "campo": "aub1", "nivel": "3", "termo": "Lightning Queen", "substituto": "Aioria"}, {"status": "ERRO", "codigo": "A03H", "campo": "aub1", "nivel": "4", "termo": "Lightning Queen", "substituto": "Aioria"}, {"status": "ERRO", "codigo": "A00B", "campo": "aub1", "nivel": "1", "termo": "Tarsus", "substituto": "Aldebaran"}, {"status": "ERRO", "codigo": "A02V", "campo": "aub1", "nivel": "1", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A05Z", "campo": "aub1", "nivel": "1", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A05Z", "campo": "aub1", "nivel": "2", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A05Z", "campo": "aub1", "nivel": "3", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A05Z", "campo": "aub1", "nivel": "4", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "4", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "1", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "2", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "3", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "5", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "6", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "7", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A06G", "campo": "aub1", "nivel": "8", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "1", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "2", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "3", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "4", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "5", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "6", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "7", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07V", "campo": "aub1", "nivel": "8", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "1", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "2", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "3", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "4", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "5", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "6", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "7", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A07W", "campo": "aub1", "nivel": "8", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A082", "campo": "aub1", "nivel": "1", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A08Z", "campo": "aub1", "nivel": "1", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A08Z", "campo": "aub1", "nivel": "2", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A08Z", "campo": "aub1", "nivel": "3", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A08Z", "campo": "aub1", "nivel": "4", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "4", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "1", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "2", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "3", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "5", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "6", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "7", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A092", "campo": "aub1", "nivel": "8", "termo": "Sylvanas", "substituto": "Aioros"}, {"status": "ERRO", "codigo": "A097", "campo": "aub1", "nivel": "4", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A097", "campo": "aub1", "nivel": "2", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A097", "campo": "aub1", "nivel": "1", "termo": "paladin", "substituto": "Mu"}, {"status": "ERRO", "codigo": "A09Q", "campo": "aub1", "nivel": "1", "termo": "knight", "substituto": "?"}, {"status": "ERRO", "codigo": "A08F", "campo": "aub1", "nivel": "1", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "1", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "2", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "3", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "4", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "5", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "6", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "7", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A08H", "campo": "aub1", "nivel": "8", "termo": "Mev", "substituto": "Shina"}, {"status": "ERRO", "codigo": "A0BT", "campo": "aub1", "nivel": "1", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A0BT", "campo": "aub1", "nivel": "3", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A0BT", "campo": "aub1", "nivel": "4", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A0BV", "campo": "aub1", "nivel": "3", "termo": "Nevermore", "substituto": "Milo"}, {"status": "ERRO", "codigo": "A01J", "campo": "aub1", "nivel": "4", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A01J", "campo": "aub1", "nivel": "1", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A01J", "campo": "aub1", "nivel": "3", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A01J", "campo": "aub1", "nivel": "2", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A01M", "campo": "aub1", "nivel": "1", "termo": "Lightning Queen", "substituto": "Aioria"}, {"status": "ERRO", "codigo": "A01M", "campo": "aub1", "nivel": "2", "termo": "Lightning Queen", "substituto": "Aioria"}, {"status": "ERRO", "codigo": "A01M", "campo": "aub1", "nivel": "3", "termo": "Lightning Queen", "substituto": "Aioria"}, {"status": "ERRO", "codigo": "A01M", "campo": "aub1", "nivel": "4", "termo": "Lightning Queen", "substituto": "Aioria"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "2", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "3", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "4", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "1", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "5", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "6", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "7", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A037", "campo": "aub1", "nivel": "8", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A06Y", "campo": "aub1", "nivel": "3", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A06Y", "campo": "aub1", "nivel": "4", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A06Y", "campo": "aub1", "nivel": "1", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A06Y", "campo": "aub1", "nivel": "5", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A06Y", "campo": "aub1", "nivel": "6", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A06Y", "campo": "aub1", "nivel": "7", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A06Y", "campo": "aub1", "nivel": "8", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A071", "campo": "aub1", "nivel": "2", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A071", "campo": "aub1", "nivel": "3", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A071", "campo": "aub1", "nivel": "1", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A071", "campo": "aub1", "nivel": "5", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A071", "campo": "aub1", "nivel": "6", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A071", "campo": "aub1", "nivel": "7", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A071", "campo": "aub1", "nivel": "8", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A08T", "campo": "aub1", "nivel": "4", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A08T", "campo": "aub1", "nivel": "2", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A08T", "campo": "aub1", "nivel": "3", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A07E", "campo": "aub1", "nivel": "2", "termo": "Tarsus", "substituto": "Aldebaran"}, {"status": "ERRO", "codigo": "A07E", "campo": "aub1", "nivel": "1", "termo": "Tarsus", "substituto": "Aldebaran"}, {"status": "ERRO", "codigo": "A07E", "campo": "aub1", "nivel": "3", "termo": "Tarsus", "substituto": "Aldebaran"}, {"status": "ERRO", "codigo": "A07E", "campo": "aub1", "nivel": "4", "termo": "Tarsus", "substituto": "Aldebaran"}, {"status": "ERRO", "codigo": "A099", "campo": "aub1", "nivel": "2", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A099", "campo": "aub1", "nivel": "3", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A099", "campo": "aub1", "nivel": "4", "termo": "Slardar", "substituto": "Shiryu"}, {"status": "ERRO", "codigo": "A09M", "campo": "aub1", "nivel": "2", "termo": "Vaisha", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A09M", "campo": "aub1", "nivel": "3", "termo": "Vaisha", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A09M", "campo": "aub1", "nivel": "4", "termo": "Vaisha", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A09M", "campo": "aub1", "nivel": "5", "termo": "Vaisha", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A09M", "campo": "aub1", "nivel": "6", "termo": "Vaisha", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A09M", "campo": "aub1", "nivel": "7", "termo": "Vaisha", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A09M", "campo": "aub1", "nivel": "8", "termo": "Vaisha", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0A8", "campo": "aub1", "nivel": "2", "termo": "Vaishi", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0A8", "campo": "aub1", "nivel": "3", "termo": "Vaishi", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0A8", "campo": "aub1", "nivel": "4", "termo": "Vaishi", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0A8", "campo": "aub1", "nivel": "5", "termo": "Vaishi", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0A8", "campo": "aub1", "nivel": "6", "termo": "Vaishi", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0A8", "campo": "aub1", "nivel": "7", "termo": "Vaishi", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0A8", "campo": "aub1", "nivel": "8", "termo": "Vaishi", "substituto": "Afrodite"}, {"status": "ERRO", "codigo": "A0CU", "campo": "aub1", "nivel": "2", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A0CV", "campo": "aub1", "nivel": "2", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A0CW", "campo": "aub1", "nivel": "2", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A0CX", "campo": "aub1", "nivel": "2", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A0FF", "campo": "aub1", "nivel": "2", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FF", "campo": "aub1", "nivel": "3", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FF", "campo": "aub1", "nivel": "4", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FF", "campo": "aub1", "nivel": "5", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FF", "campo": "aub1", "nivel": "6", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FF", "campo": "aub1", "nivel": "7", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FF", "campo": "aub1", "nivel": "8", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "1", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "2", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "3", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "4", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "5", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "6", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "7", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A0FK", "campo": "aub1", "nivel": "8", "termo": "Lich King", "substituto": "Hyoga"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "4", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "2", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "3", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "1", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "5", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "6", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "7", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A04C", "campo": "aub1", "nivel": "8", "termo": "marine", "substituto": "Seiya"}, {"status": "ERRO", "codigo": "A0G4", "campo": "aub1", "nivel": "2", "termo": "Blademaster", "substituto": "Shura"}, {"status": "ERRO", "codigo": "A441", "campo": "atp1", "nivel": "1", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A441", "campo": "atp1", "nivel": "2", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A441", "campo": "atp1", "nivel": "3", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A441", "campo": "atp1", "nivel": "4", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "1", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "2", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "3", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "4", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "5", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "6", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "7", "termo": "Storm", "substituto": "?"}, {"status": "ERRO", "codigo": "A0HA", "campo": "atp1", "nivel": "8", "termo": "Storm", "substituto": "?"}, {"status": "ATENCAO", "codigo": "AHtb", "campo": "aub1", "nivel": "3", "termo": "magical hammer", "substituto": "?"}, {"status": "ATENCAO", "codigo": "AHtb", "campo": "aub1", "nivel": "2", "termo": "magical hammer", "substituto": "?"}, {"status": "ATENCAO", "codigo": "AHtb", "campo": "aub1", "nivel": "1", "termo": "magical hammer", "substituto": "?"}, {"status": "ATENCAO", "codigo": "AHtb", "campo": "aub1", "nivel": "5", "termo": "magical hammer", "substituto": "?"}, {"status": "ATENCAO", "codigo": "AHtb", "campo": "aub1", "nivel": "6", "termo": "magical hammer", "substituto": "?"}, {"status": "ATENCAO", "codigo": "AHtb", "campo": "aub1", "nivel": "7", "termo": "magical hammer", "substituto": "?"}, {"status": "ATENCAO", "codigo": "AHtb", "campo": "aub1", "nivel": "8", "termo": "magical hammer", "substituto": "?"}, {"status": "ATENCAO", "codigo": "ANlm", "campo": "aub1", "nivel": "1", "termo": "Flame Atronach", "substituto": "?"}, {"status": "ATENCAO", "codigo": "ANlm", "campo": "aub1", "nivel": "2", "termo": "Flame Atronach", "substituto": "?"}, {"status": "ATENCAO", "codigo": "ANlm", "campo": "aub1", "nivel": "3", "termo": "Flame Atronach", "substituto": "?"}, {"status": "ATENCAO", "codigo": "ANlm", "campo": "aub1", "nivel": "5", "termo": "Flame Atronach", "substituto": "?"}, {"status": "ATENCAO", "codigo": "ANlm", "campo": "aub1", "nivel": "6", "termo": "Flame Atronach", "substituto": "?"}, {"status": "ATENCAO", "codigo": "ANlm", "campo": "aub1", "nivel": "7", "termo": "Flame Atronach", "substituto": "?"}, {"status": "ATENCAO", "codigo": "ANlm", "campo": "aub1", "nivel": "8", "termo": "Flame Atronach", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "2", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "2", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "3", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "3", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "4", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "4", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "5", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "5", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "6", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "6", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "7", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "7", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "8", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "Arsw", "campo": "aub1", "nivel": "8", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A035", "campo": "aub1", "nivel": "1", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A035", "campo": "aub1", "nivel": "3", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A035", "campo": "aub1", "nivel": "2", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A035", "campo": "atp1", "nivel": "1", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A035", "campo": "atp1", "nivel": "2", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A035", "campo": "atp1", "nivel": "3", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A035", "campo": "atp1", "nivel": "4", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "aub1", "nivel": "4", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "aub1", "nivel": "1", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "aub1", "nivel": "3", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "aub1", "nivel": "2", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "atp1", "nivel": "4", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "atp1", "nivel": "1", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "atp1", "nivel": "2", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A01J", "campo": "atp1", "nivel": "3", "termo": "Ice Golem", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "4", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "2", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "3", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "1", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "5", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "6", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "7", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "aub1", "nivel": "8", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "4", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "1", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "2", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "3", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "5", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "6", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "7", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A0F7", "campo": "atp1", "nivel": "8", "termo": "scarab beetles", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "2", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "2", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "3", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "3", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "4", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "4", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "5", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "5", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "6", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "6", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "7", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "7", "termo": "Snakes are immune", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "8", "termo": "magical snakes", "substituto": "?"}, {"status": "ATENCAO", "codigo": "A00G", "campo": "aub1", "nivel": "8", "termo": "Snakes are immune", "substituto": "?"}], "bases": [], "categoria": []};
+
+// Configuração das seções
+const SECOES = {
+  auditoria_base: {
+    titulo: 'Auditoria Base',
+    arquivo: 'saida/audit_errors.txt',
+    render: renderAuditoriaBase,
+  },
+  lote4: {
+    titulo: 'Lote 4 — Termo Nativo',
+    arquivo: 'saida/audit_termos.txt',
+    render: renderLote4,
+  },
+  bases: {
+    titulo: 'Bases Erradas',
+    arquivo: 'saida/audit_bases.txt',
+    render: renderBases,
+  },
+  categoria: {
+    titulo: 'Categoria (upra)',
+    arquivo: 'saida/audit_categoria.txt',
+    render: renderCategoria,
+  },
+};
+
+let secaoAtiva = 'auditoria_base';
+
+function contarStatus(arr, campo='status') {
+  let e=0, a=0, o=0;
+  for (const x of arr) {
+    const s = x[campo];
+    if (s === 'ERRO' || s === '🔴') e++;
+    else if (s === 'ATENCAO' || s === '⚠️') a++;
+    else if (s === 'OK' || s === '✅') o++;
+  }
+  return { e, a, o };
+}
+
+function renderResumo() {
+  const div = document.getElementById('resumo');
+  const ab = contarStatus(DADOS.auditoria_base);
+  const l4 = contarStatus(DADOS.lote4);
+  const bs = { total: DADOS.bases.length };
+  const ct = contarStatus(DADOS.categoria, 'status');
+
+  div.innerHTML = `
+    <div class="card" onclick="mudarSecao('auditoria_base')">
+      <div class="label">Auditoria Base</div>
+      <div class="num ${ab.e>0?'vermelho':'verde'}">${ab.e}</div>
+      <div class="sub">erro(s) · ${ab.a} atenção(ões)</div>
+    </div>
+    <div class="card" onclick="mudarSecao('lote4')">
+      <div class="label">Lote 4 — Termo Nativo</div>
+      <div class="num vermelho">${l4.e}</div>
+      <div class="sub">erro(s) · ${l4.a} atenção(ões)</div>
+    </div>
+    <div class="card" onclick="mudarSecao('bases')">
+      <div class="label">Bases Erradas</div>
+      <div class="num vermelho">${bs.total}</div>
+      <div class="sub">skill(s) com base suspeita</div>
+    </div>
+    <div class="card" onclick="mudarSecao('categoria')">
+      <div class="label">Categoria (upra)</div>
+      <div class="num ${ct.e>0?'vermelho':'verde'}">${ct.e}</div>
+      <div class="sub">errado(s) · ${ct.o} ok</div>
+    </div>
+  `;
+}
+
+function renderTabs() {
+  const div = document.getElementById('tabs');
+  div.innerHTML = Object.entries(SECOES).map(([k, s]) =>
+    `<div class="tab ${k===secaoAtiva?'ativo':''}" onclick="mudarSecao('${k}')">${s.titulo}</div>`
+  ).join('');
+}
+
+function mudarSecao(k) {
+  secaoAtiva = k;
+  renderTabs();
+  renderConteudo();
+}
+
+function renderConteudo() {
+  const div = document.getElementById('conteudo');
+  const arr = DADOS[secaoAtiva] || [];
+  const fn = SECOES[secaoAtiva].render;
+
+  div.innerHTML = `
+    <div class="filtros">
+      <input type="text" id="busca" placeholder="Buscar código ou herói..." oninput="aplicarFiltro()">
+    </div>
+    <div class="contador" id="contador"></div>
+    <div id="tabela-container">${fn(arr)}</div>
+  `;
+  aplicarFiltro();
+}
+
+function aplicarFiltro() {
+  const termo = (document.getElementById('busca')?.value || '').toLowerCase();
+  const tabela = document.getElementById('tabela-container');
+  const linhas = tabela.querySelectorAll('tbody tr');
+  let vis = 0;
+  linhas.forEach(tr => {
+    const texto = tr.textContent.toLowerCase();
+    const bate = !termo || texto.includes(termo);
+    tr.style.display = bate ? '' : 'none';
+    if (bate) vis++;
+  });
+  document.getElementById('contador').textContent = `${vis} de ${linhas.length} linhas`;
+}
+
+function renderAuditoriaBase(arr) {
+  if (!arr.length) return '<div class="vazio">Sem dados</div>';
+  return `<table>
+    <thead><tr>
+      <th>Status</th><th>Código</th><th>Herói</th><th>Campo</th>
+      <th>Nível</th><th>Esperado</th><th>Atual</th>
+    </tr></thead>
+    <tbody>
+    ${arr.map(l => `
+      <tr class="${l.status==='ERRO'?'linha-erro':'linha-atencao'}">
+        <td><span class="tag ${l.status==='ERRO'?'tag-erro':'tag-atencao'}">${l.status}</span></td>
+        <td class="codigo">${l.codigo}</td>
+        <td class="heroi">${l.heroi}</td>
+        <td>${l.campo}</td>
+        <td class="mono">${l.nivel}</td>
+        <td class="mono">${escapeHtml(l.esperado)}</td>
+        <td class="mono">${escapeHtml(l.atual)}</td>
+      </tr>`).join('')}
+    </tbody>
+  </table>`;
+}
+
+function renderLote4(arr) {
+  if (!arr.length) return '<div class="vazio">Sem dados</div>';
+  return `<table>
+    <thead><tr>
+      <th>Status</th><th>Código</th><th>Campo</th><th>Nível</th>
+      <th>Termo Nativo</th><th>Substituto</th>
+    </tr></thead>
+    <tbody>
+    ${arr.map(l => `
+      <tr class="${l.status==='ERRO'?'linha-erro':'linha-atencao'}">
+        <td><span class="tag ${l.status==='ERRO'?'tag-erro':'tag-atencao'}">${l.status}</span></td>
+        <td class="codigo">${l.codigo}</td>
+        <td>${l.campo}</td>
+        <td class="mono">nv${l.nivel}</td>
+        <td class="termo">${escapeHtml(l.termo)}</td>
+        <td class="subst">${escapeHtml(l.substituto)}</td>
+      </tr>`).join('')}
+    </tbody>
+  </table>`;
+}
+
+function renderBases(arr) {
+  if (!arr.length) return '<div class="vazio">Sem dados</div>';
+  return `<table>
+    <thead><tr>
+      <th>Código</th><th>Herói</th><th>Base</th><th>Família</th>
+    </tr></thead>
+    <tbody>
+    ${arr.map(l => `
+      <tr class="linha-erro">
+        <td class="codigo">${l.codigo}</td>
+        <td class="heroi">${l.heroi}</td>
+        <td class="codigo">${l.base}</td>
+        <td class="mono">${escapeHtml(l.familia)}</td>
+      </tr>`).join('')}
+    </tbody>
+  </table>`;
+}
+
+function renderCategoria(arr) {
+  if (!arr.length) return '<div class="vazio">Sem dados</div>';
+  return `<table>
+    <thead><tr>
+      <th>Status</th><th>Herói</th><th>Código</th>
+      <th>Atual</th><th>Esperado</th><th>STR/AGI/INT</th><th>Origem</th>
+    </tr></thead>
+    <tbody>
+    ${arr.map(l => {
+      const cls = l.status === '✅' ? 'linha-ok' : (l.status === '🔴' ? 'linha-erro' : 'linha-atencao');
+      const tag = l.status === '✅' ? 'tag-ok' : (l.status === '🔴' ? 'tag-erro' : 'tag-neutro');
+      return `
+      <tr class="${cls}">
+        <td><span class="tag ${tag}">${l.status}</span></td>
+        <td class="heroi">${escapeHtml(l.nome)}</td>
+        <td class="codigo">${l.codigo}</td>
+        <td class="mono">${l.atual}</td>
+        <td class="mono">${l.esperado}</td>
+        <td class="mono">${l.stats_str}/${l.stats_agi}/${l.stats_int}</td>
+        <td class="mono">${escapeHtml(l.origem)}</td>
+      </tr>`;
+    }).join('')}
+    </tbody>
+  </table>`;
+}
+
+function escapeHtml(s) {
+  if (s === null || s === undefined) return '';
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+// Data de geração
+document.getElementById('data-geracao').textContent = DADOS.__gerado || '?';
+
+// Init
+renderResumo();
+renderTabs();
+renderConteudo();
+</script>
+</body>
+</html>
