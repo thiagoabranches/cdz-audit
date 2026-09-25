@@ -1,0 +1,159 @@
+═══════════════════════════════════════════════════════
+ANGEL ARENA ALLSTARS 2013_1 — ANÁLISE DE SKINS
+═══════════════════════════════════════════════════════
+
+Total de heróis: 127
+
+═══════════════════════════════════════════════════════
+MODELOS CUSTOM (8) — reusáveis
+═══════════════════════════════════════════════════════
+
+  UC18   | Daimon                             
+         Modelo: war3mapImported/Angel.mdl
+         Icone:  ReplaceableTextures\CommandButtons\BTNArthas.blp
+
+  H011   | God Picker                         
+         Modelo: war3mapImported\dummy.mdl
+         Icone:  ReplaceableTextures\CommandButtons\BTNKiljaedin.blp
+
+  H00V   | Goddess of Victory                 
+         Modelo: war3mapImported/Angel.mdl
+
+  H00R   | Goddess of Victory                 
+         Modelo: war3mapImported/Angel.mdl
+
+  H00N   | Goddess of Hearth                  
+         Modelo: war3mapImported\FemaleMage.mdl
+         Icone:  ReplaceableTextures\CommandButtons\BTNFemaleMage.blp
+
+  H00M   | Goddess of Wisdom                  
+         Modelo: war3mapImported\BloodElfPriestess.mdl
+         Icone:  ReplaceableTextures\CommandButtons\BTNBloodElfPriestess.blp
+
+  H00H   | King of Knights                    
+         Modelo: war3mapImported\HeroSaber.mdl
+         Icone:  ReplaceableTextures\CommandButtons\BTNIconSaber.blp
+
+  H00E   | God of Lightning                   
+         Modelo: war3mapImported/HeroStormthrasher.mdl
+         Icone:  ReplaceableTextures\CommandButtons\BTNStormThrasher.blp
+
+═══════════════════════════════════════════════════════
+MODELOS NATIVOS WC3 (93) — só referência
+═══════════════════════════════════════════════════════
+
+  [  3x] Units\Naga\NagaSiren\NagaSiren.mdl
+  [  3x] units\nightelf\EvilIllidan\IllidanEvil.mdl
+  [  2x] units\undead\Gargoyle\Gargoyle.mdl
+  [  2x] units\demon\DoomGuard\DoomGuard.mdl
+  [  2x] units\creeps\BansheeGhost\BansheeGhost.mdl
+  [  2x] units\creeps\FelstalkerPurple\FelstalkerPurple.mdl
+  [  2x] units\demon\felhound\felhound_V1.mdl
+  [  2x] units\undead\Acolyte\Acolyte.mdl
+  [  2x] units\creeps\HumanMage\HumanMage.mdl
+  [  2x] buildings\nightelf\AncientProtector\AncientProtector.mdl
+  [  2x] units\nightelf\HeroKeeperoftheGroveGhost\HeroKeeperoftheGroveGhost.mdl
+  [  2x] units\nightelf\DruidoftheClaw\DruidoftheClaw.mdl
+  [  1x] units\human\Uther\Uther.mdl
+  [  1x] units\critters\VillagerKid\VillagerKid.mdl
+  [  1x] Units\Critters\Marine\Marine.mdl
+  [  1x] units\naga\WindSerpent\WindSerpent.mdl
+  [  1x] units\creeps\GolemStatue\GolemStatue.mdl
+  [  1x] Units\Creeps\ArchnathidGreen\ArchnathidGreen.mdl
+  [  1x] units\nightelf\Huntress\Huntress.mdl
+  [  1x] units\undead\Kelthuzad\Kelthuzad.mdl
+  [  1x] units\human\GryphonRider\GryphonRider.mdl
+  [  1x] units\creeps\Zombie\Zombie.mdl
+  [  1x] units\orc\Tauren\Tauren.mdl
+  [  1x] units\undead\Tichondrius\Tichondrius.mdl
+  [  1x] units\creeps\Wendigo\Wendigo.mdl
+  [  1x] Units\Critters\Hydralisk\Hydralisk.mdl
+  [  1x] units\human\Jaina\Jaina.mdl
+  [  1x] Units\Creeps\Unbroken\Unbroken.mdl
+  [  1x] units\undead\CryptFiend\CryptFiend.mdl
+  [  1x] units\other\DranaiAkama\DranaiAkama.mdl
+  [  1x] Units\Creeps\Hydra\Hydra.mdl
+  [  1x] units\orc\Hellscream\Hellscream.mdl
+  [  1x] units\critters\VillagerWoman\VillagerWoman.mdl
+  [  1x] units\demon\Demoness\Demoness.mdl
+  [  1x] units\creeps\SatyrTrickster\SatyrTrickster.mdl
+  [  1x] units\demon\ChaosGrunt\ChaosGrunt.mdl
+  [  1x] units\creeps\BlackDragon\BlackDragon.mdl
+  [  1x] units\creeps\OgreOneHeadedArmored\OgreOneHeadedArmored.mdl
+  [  1x] units\other\DranaiMage\DranaiMage.mdl
+  [  1x] units\demon\ChaosHellscream\ChaosHellscream.mdl
+  [  1x] units\creeps\Sasquatch\Sasquatch.mdl
+  [  1x] units\demon\Infernal\Infernal.mdl
+  [  1x] Units\Creeps\ForgottenOne\ForgottenOne.mdl
+  [  1x] units\creeps\Revenant\Revenant.mdl
+  [  1x] units\creeps\BanditLord\BanditLord.mdl
+  [  1x] units\critters\FlyingSheep\FlyingSheep.mdl
+  [  1x] units\undead\Abomination\Abomination.mdl
+  [  1x] units\creeps\RockGolem\RockGolem.mdl
+  [  1x] units\creeps\OgreMagi\OgreMagi.mdl
+  [  1x] units\creeps\BanditMage\BanditMage.mdl
+  [  1x] units\nightelf\SpiritOfVengeance\SpiritOfVengeance.mdl
+  [  1x] units\undead\SkeletonMage\SkeletonMage.mdl
+  [  1x] units\creeps\Medivh\Medivh.mdl
+  [  1x] units\human\Sorceress\Sorceress_V1.mdl
+  [  1x] units\human\Knight\Knight.mdl
+  [  1x] units\human\TheCaptain\TheCaptain.mdl
+  [  1x] units\human\ArthaswithSword\ArthaswithSword.mdl
+  [  1x] units\human\BloodElfSpellThief\BloodElfSpellThief.mdl
+  [  1x] units\creeps\FurbolgTracker\FurbolgTracker.mdl
+  [  1x] units\other\Proudmoore\Proudmoore.mdl
+  [  1x] units\creeps\Bandit\Bandit.mdl
+  [  1x] units\demon\Kiljaeden\Kiljaeden.mdl
+  [  1x] units\other\HeroArchMageGhost\HeroArchMageGhost.mdl
+  [  1x] units\critters\ElfVillagerWoman\ElfVillagerWoman.mdl
+  [  1x] units\nightelf\Shandris\Shandris.mdl
+  [  1x] units\critters\HighElfPeasant\HighElfPeasant.mdl
+  [  1x] units\creeps\SludgeMonster\SludgeMonster.mdl
+  [  1x] Units\Creeps\DragonSpawnBlue\DragonSpawnBlue.mdl
+  [  1x] units\human\Rifleman\Rifleman.mdl
+  [  1x] units\creeps\watcher\watcher.mdl
+  [  1x] Units\Undead\EvilSylvanas\EvilSylvanas.mdl
+  [  1x] units\nightelf\Chimaera\Chimaera.mdl
+  [  1x] units\creeps\VoidWalker\VoidWalker.mdl
+  [  1x] units\demon\FelgaurdBlue\FelgaurdBlue.mdl
+  [  1x] Units\Creeps\SeaElemental\SeaElemental.mdl
+  [  1x] units\creeps\assassin\assassin.mdl
+  [  1x] units\nightelf\RiddenHippogryph\RiddenHippogryph.mdl
+  [  1x] units\creeps\HarpyQueen\HarpyQueen.mdl
+  [  1x] units\nightelf\Dryad\Dryad.mdl
+
+═══════════════════════════════════════════════════════
+SEM MODELO DEFINIDO (26)
+═══════════════════════════════════════════════════════
+
+  UC84   | God of Death
+  UC51   | Naga Siren
+  UC49   | Night Stalker
+  UC41   | ?
+  U00B   | God of the Underworld
+  OC63   | ?
+  OC62   | Nerubian Assassin
+  O00F   | Ancient Technomancer
+  O00A   | God of Terror
+  O003   | Pandaren Battlemaster
+  O001   | ?
+  N04K   | ?
+  N03D   | ?
+  N035   | God of Madness
+  HC32   | Fire Mage
+  HC28   | Phantom Assassin
+  H01C   | ?
+  H00I   | God of Prophecy
+  H004   | Rock Smasher
+  EN02   | Anti-Mage
+  EN01   | Anti-Mage
+  EC79   | ?
+  EC78   | ?
+  EC74   | ?
+  EC69   | Prophet
+  E006   | Anti-Mage
+
+═══════════════════════════════════════════════════════
+PROCURA: AnasterianSunstrider
+═══════════════════════════════════════════════════════
+  ❌ Não encontrado
