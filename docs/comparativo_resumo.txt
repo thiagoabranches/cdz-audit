@@ -1,0 +1,41 @@
+=== 72 SKILLS EDITADAS PELO CLAUDE ===
+
+Por herói:
+
+  Orpheu          ( 6): A06S, A06W, A06X, A07N, AEah, ANsw
+  Shun            ( 5): A020, A0BV, A0F7, AUim, AUls
+  Shiryu          ( 5): A06V, A06Y, A071, A072, A099
+  Marin           ( 5): A075, A0GL, A0GM, A0GQ, A0GS
+  Sorento         ( 4): A02U, A031, A036, ANfa
+  Saga            ( 4): A0BB, AEev, AEim, AEme
+  Mu              ( 3): A00A, A06G, AHad
+  Aioria          ( 3): A03H, A03I, AOcl
+  Ikki            ( 3): A03K, A0A1, ANlm
+  Afrodite        ( 3): A09M, A09O, A0A8
+  Siegfried       ( 2): A008, A00S
+  Kamus           ( 2): A00X, AHbz
+  Shion           ( 2): A017, AHav
+  DeathMask       ( 2): A01P, AUin
+  Hyoga           ( 2): A035, A0FF
+  Shina           ( 2): A05Z, A08H
+  Shura           ( 2): A067, A0BT
+  Shaka           ( 2): ANhx, Arsw
+  Aioros          ( 1): A000
+  Milo            ( 1): A01R
+  Seiya           ( 1): A03C
+  Aldebaran       ( 1): A07E
+
+=== SEM MAPEAMENTO (11) ===
+  A00F
+  A00N
+  A00W
+  A08E
+  A0GB
+  A0H0
+  A400
+  A401
+  A402
+  A403
+  AOsh
+
+=== TOTAL: 72 ===
