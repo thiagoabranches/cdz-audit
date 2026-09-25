@@ -269,3 +269,15 @@ Total: 7 heróis processados, 14 skills convertidas, 4 mantidas.
 
 Conclusão: a conversão CDZ foi estruturalmente limpa.
 Não há skills perdidas — só upgrades de nativo pra custom.
+
+## Exploração de mapas CDZ (25/09/2026)
+
+### Vereditos
+- **v5.0e**: ✅ Referência principal (usado pro Tides of Blood + validações)
+- **v2.4**: ❌ Formato incompatível (skills nativas, sem custom)
+- **v6.0 b1.8**: ❌ Beta incompleto (assets sem skills CDZ custom)
+- **TOB**: ✅ Referência secundária (Shun/Shura)
+
+### Conclusão
+Não há outras minas de ouro nos mapas Sacred War.
+O v5.0e é a única fonte CDZ confiável.
