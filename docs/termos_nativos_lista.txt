@@ -1,0 +1,51 @@
+paladin          → Mu
+Nome King        → Shion
+Tarsus           → Aldebaran
+Demon Hunter     → Saga
+dreadlord        → DeathMask
+Lightning Queen  → Aioria
+Rohan            → Shaka
+Nevermore        → Milo
+Mev              → Shina
+Sylvanas         → Aioros
+Blademaster      → Shura
+archmage         → Kamus
+Vaishi           → Afrodite
+Vaisha           → Afrodite
+paratrooper      → Seiya
+marine           → Seiya
+Lich King        → Hyoga
+Slardar          → Shiryu
+Bado             → Seiya
+Alcor            → Seiya
+knight           → DeathMask
+death knight     → DeathMask
+
+Rifleman
+footman
+sorceress
+mountain king
+blood mage
+tauren chieftain
+shadow hunter
+warden
+priestess
+keeper of the grove
+crypt lord
+naga
+pit lord
+
+Naga Priestess
+Reef Harpy
+Ice Golem
+Flame Atronach
+scarab beetles
+
+magical hammer
+magical snakes
+Snakes are immune
+
+Aura Profana
+Golpe das Sombras
+
+Storm
