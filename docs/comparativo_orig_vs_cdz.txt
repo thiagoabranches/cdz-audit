@@ -1,0 +1,725 @@
+=== COMPARATIVO X-HERO ORIGINAL vs X-HERO CDZ ===
+Herois em comum: 26
+
+
+======================================================================
+### Edem
+  ORIGINAL: ? | ?
+  CDZ:      Saga | INT
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [A00K] negative energy | base=ANfd | nv=8 | mana=80→500 | cd=8.0→8.0
+    [AEim] ? | base=AEim | nv=8 | mana=0→0 | cd=—
+    [AEev] Resourcefulness | base=AEev | nv=8 | mana=— | cd=—
+    [A0BB] Throw Poison | base=ANab | nv=8 | mana=160→1000 | cd=20.0→20.0
+    [AEme] ? | base=AEme | nv=4 | mana=500→2000 | cd=120.0→120.0
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [A00K] Satan Imperial | base=ANfd | nv=8 | mana=80→500 | cd=8.0→8.0
+    [AEim] Other Side | base=AEim | nv=8 | mana=0→0 | cd=—
+    [AEev] Labirinto de Gemeos e Ilusionismo | base=AEev | nv=8 | mana=— | cd=—
+    [A0BB] Another Dimension | base=ANab | nv=4 | mana=400→1600 | cd=120.0→120.0
+    [AEme] Bencao da Deusa da Sabedoria | base=AEme | nv=4 | mana=500→2000 | cd=120.0→120.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A00K', 'A0BB', 'AEev', 'AEim', 'AEme']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Ekee
+  ORIGINAL: ? | ?
+  CDZ:      Hakurei | INT
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [A0G8] The power of the forest | base=AUin | nv=8 | mana=100→800 | cd=17.0→10.0
+    [A0GB] Spirits of nature | base=ANsg | nv=8 | mana=150→500 | cd=30.0→30.0
+    [AEmb] Mind drain | base=AEmb | nv=8 | mana=150→1200 | cd=20.0→20.0
+    [AHab] ? | base=AHab | nv=8 | mana=— | cd=—
+    [A0GV] Nature's wrath | base=ANcl | nv=8 | mana=600→1000 | cd=120.0→15.0
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [A0G8] Telekinesis | base=AUin | nv=8 | mana=100→800 | cd=17.0→10.0
+    [A0GB] Ondas do Inferno (Sekishiki Meikai Ha) | base=ANsg | nv=8 | mana=150→500 | cd=30.0→30.0
+    [AEmb] Sealing with Athena's Talismans | base=AEmb | nv=8 | mana=150→1200 | cd=20.0→20.0
+    [AHab] Aura Armor Restoration | base=AHab | nv=8 | mana=— | cd=—
+    [A0GV] Athena's Sacred Sword | base=ANcl | nv=8 | mana=600→1000 | cd=120.0→15.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A0G8', 'A0GB', 'A0GV', 'AEmb', 'AHab']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Emoo
+  ORIGINAL: ? | ?
+  CDZ:      Sorento | INT
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [Acri] Curse of the Moon | base=Acri | nv=8 | mana=275→800 | cd=100.0→30.0
+    [A036] Full moon | base=ANrc | nv=4 | mana=600→2400 | cd=?→120.0
+    [ANfa] ? | base=ANfa | nv=8 | mana=5→40 | cd=—
+    [A033] Starfall | base=AEfk | nv=8 | mana=200→900 | cd=15.0→15.0
+    [A031] Dexterous Shooting | base=AOcr | nv=8 | mana=— | cd=—
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [Acri] Leash Flute | base=Acri | nv=8 | mana=275→800 | cd=100.0→30.0
+    [A036] Conjure Image | base=AOmi | nv=0 | mana=?→? | cd=?→?
+    [ANfa] Mantle of Invisibility | base=ANfa | nv=8 | mana=5→40 | cd=—
+    [A033] Tidal Barrage | base=AEfk | nv=8 | mana=200→900 | cd=15.0→15.0
+    [A031] Leash Flute (Mind Control) | base=AHmc | nv=0 | mana=200→? | cd=?→?
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A031', 'A033', 'A036', 'ANfa', 'Acri']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Ewar
+  ORIGINAL: ? | ?
+  CDZ:      Shina | AGI
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [A08H] Next target | base=Afae | nv=8 | mana=200→900 | cd=30.0→30.0
+    [AEfk] ? | base=AEfk | nv=8 | mana=?→450 | cd=6.0→6.0
+    [AEsh] ? | base=AEsh | nv=8 | mana=110→600 | cd=12.0→12.0
+    [A00N] Killer Talent | base=Aamk | nv=8 | mana=?→0 | cd=?→0.0
+    [A05Z] Last hit | base=AOcr | nv=4 | mana=— | cd=—
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [A08H] Thunder Claw | base=Afae | nv=8 | mana=200→900 | cd=30.0→30.0
+    [A0HA] Shuriken Storm | base=AEfk | nv=8 | mana=?→450 | cd=6.0→6.0
+    [A0HB] Poisoned Kunai | base=AEsh | nv=8 | mana=110→600 | cd=12.0→12.0
+    [A00N] Evasiveness | base=Aamk | nv=8 | mana=?→0 | cd=?→0.0
+    [A05Z] Sneak Attack: Last Hit | base=AOcr | nv=4 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 3
+      ['A00N', 'A05Z', 'A08H']
+    Skills removidas: 2
+      ['AEfk', 'AEsh']
+    Skills adicionadas (CDZ): 2
+      ['A0HA', 'A0HB']
+
+======================================================================
+### H000
+  ORIGINAL: Moonlight Guardian | ?
+  CDZ:      Marin | AGI
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [A0GM] Moon light | base=AHtb | nv=8 | mana=100→800 | cd=8.0→8.0
+    [A0GL] moon chain | base=AOcl | nv=8 | mana=170→800 | cd=12.0→12.0
+    [A0GQ] Blessing of Elune | base=ACac | nv=8 | mana=?→0 | cd=?→0.0
+    [A075] ? | base=Amgl | nv=8 | mana=?→0 | cd=?→0.0
+    [A0GS] Power of the Moon | base=Aroa | nv=4 | mana=300→1200 | cd=150.0→150.0
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [A0GM] Eagle Toe Flash | base=AOsh | nv=0 | mana=?→? | cd=?→?
+    [A0GL] Lightning Meteor | base=AOcl | nv=0 | mana=?→? | cd=?→?
+    [A0GQ] Eagle Flight | base=AEbl | nv=0 | mana=?→? | cd=?→?
+    [A075] Mentor's Blessing | base=Ainf | nv=0 | mana=?→? | cd=?→?
+    [A0GS] Eagle Senses | base=AEev | nv=0 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A075', 'A0GL', 'A0GM', 'A0GQ', 'A0GS']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### H002
+  ORIGINAL: Paratrooper | ?
+  CDZ:      Seiya | AGI
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A037] salvo of missiles | base=AEfk | nv=8 | mana=150→500 | cd=7.0→7.0
+    [A013] heavy warhead | base=ACtb | nv=8 | mana=100→800 | cd=13.0→13.0
+    [A047] Acid | base=AIda | nv=8 | mana=150→850 | cd=30.0→30.0
+    [A04C] Headshot | base=AHbh | nv=8 | mana=— | cd=—
+    [A03C] Clone | base=AIil | nv=4 | mana=400→1600 | cd=120.0→120.0
+
+  --- CDZ (5 skills) ---
+    [A037] Pegasus Ryuseiken | base=AEfk | nv=8 | mana=150→500 | cd=7.0→7.0
+    [A013] Rolling Crash | base=ACtb | nv=8 | mana=100→800 | cd=13.0→13.0
+    [A047] Cosmo Break | base=AIda | nv=8 | mana=150→850 | cd=30.0→30.0
+    [A04C] Meteor Critical | base=AHbh | nv=8 | mana=— | cd=—
+    [A03C] Sanctuary | base=Asth | nv=5 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A013', 'A037', 'A03C', 'A047', 'A04C']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### H009
+  ORIGINAL: Lightning Queen | ?
+  CDZ:      Aioria | AGI
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [A03H] electric shock | base=AHdr | nv=4 | mana=500→2000 | cd=40.0→40.0
+    [A03I] The power of lightning | base=AId7 | nv=0 | mana=?→0 | cd=?→0.0
+    [A07Q] Lightning strike | base=ANin | nv=8 | mana=170→800 | cd=16.0→9.0
+    [AOcl] ? | base=AOcl | nv=8 | mana=?→600 | cd=6.0→6.0
+    [ANfl] ? | base=ANfl | nv=8 | mana=290→1200 | cd=20.0→20.0
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [A03H] Lightning Bolt | base=AHdr | nv=4 | mana=500→2000 | cd=40.0→40.0
+    [A03I] Lightning Plasma | base=AId7 | nv=8 | mana=?→0 | cd=?→0.0
+    [A07Q] Lightning Strike | base=ANin | nv=8 | mana=170→800 | cd=16.0→9.0
+    [AOcl] Lion's Fury | base=AOcl | nv=8 | mana=?→600 | cd=6.0→6.0
+    [ANfl] Photon Burst | base=ANfl | nv=8 | mana=290→1200 | cd=20.0→20.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A03H', 'A03I', 'A07Q', 'ANfl', 'AOcl']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Hamg
+  ORIGINAL: Healer | ?
+  CDZ:      Kiki | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A06H] Shining light | base=AUin | nv=8 | mana=100→800 | cd=10.0→10.0
+    [A02N] ? | base=ACif | nv=8 | mana=160→1000 | cd=?→5.0
+    [A02H] rebirth | base=ANcl | nv=4 | mana=600→2400 | cd=180.0→90.0
+    [A00M] ? | base=AOhw | nv=8 | mana=150→1200 | cd=15.0→15.0
+    [A07U] Aura of life force | base=AUau | nv=8 | mana=— | cd=—
+
+  --- CDZ (5 skills) ---
+    [A06H] Shining light | base=AUin | nv=8 | mana=100→800 | cd=10.0→10.0
+    [A02N] ? | base=ACif | nv=8 | mana=160→1000 | cd=?→5.0
+    [A02H] rebirth | base=ANcl | nv=4 | mana=600→2400 | cd=180.0→90.0
+    [A00M] ? | base=AOhw | nv=8 | mana=150→1200 | cd=15.0→15.0
+    [A07U] Aura of life force | base=AUau | nv=8 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A00M', 'A02H', 'A02N', 'A06H', 'A07U']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Harf
+  ORIGINAL: Battle Golem | ?
+  CDZ:      Aldebaran | STR
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A08L] Punch | base=AHtb | nv=8 | mana=90→650 | cd=?→9.0
+    [A07M] Explosion of power | base=ANcl | nv=8 | mana=150→1200 | cd=23.0→16.0
+    [A084] combat power | base=AUts | nv=8 | mana=— | cd=—
+    [A07D] magic deflection | base=Aegr | nv=8 | mana=?→0 | cd=?→0.0
+    [A07E] final form | base=AEme | nv=4 | mana=600→2400 | cd=?→150.0
+
+  --- CDZ (5 skills) ---
+    [A08L] Great Horn | base=AHtb | nv=8 | mana=90→650 | cd=?→9.0
+    [A07M] Taurus Impact | base=ANcl | nv=8 | mana=150→1200 | cd=23.0→16.0
+    [A084] Defensive Stance | base=AUts | nv=8 | mana=— | cd=—
+    [A07D] Cosmo Resistance | base=Aegr | nv=8 | mana=?→0 | cd=?→0.0
+    [A07E] Unstoppable Strength | base=AEme | nv=4 | mana=600→2400 | cd=?→150.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A07D', 'A07E', 'A07M', 'A084', 'A08L']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Hblm
+  ORIGINAL: sorcerer | ?
+  CDZ:      Siegfried | STR
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [A00Q] ring of fire | base=ANcl | nv=8 | mana=230→1000 | cd=22.0→15.0
+    [A06O] ? | base=Amls | nv=8 | mana=250→1300 | cd=40.0→40.0
+    [AHfs] ? | base=AHfs | nv=8 | mana=140→700 | cd=19.0→12.0
+    [AHpx] ? | base=AHpx | nv=4 | mana=750→3000 | cd=140.0→140.0
+    [A00I] Fire ball | base=ANfb | nv=8 | mana=200→900 | cd=6.0→6.0
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [A00Q] Sword of Odin | base=ANcl | nv=8 | mana=230→1000 | cd=22.0→15.0
+    [A06O] Ice Coffin | base=Amls | nv=8 | mana=250→1300 | cd=40.0→40.0
+    [A0F5] Dragon's Blizzard | base=AHfs | nv=8 | mana=140→700 | cd=19.0→12.0
+    [A008] Drake Skin | base=AHpx | nv=4 | mana=750→3000 | cd=140.0→140.0
+    [A00I] Iron Body (Dragon's Blood) | base=ANfb | nv=8 | mana=200→900 | cd=6.0→6.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 3
+      ['A00I', 'A00Q', 'A06O']
+    Skills removidas: 2
+      ['AHfs', 'AHpx']
+    Skills adicionadas (CDZ): 2
+      ['A008', 'A0F5']
+
+======================================================================
+### Hjai
+  ORIGINAL: archmage | ?
+  CDZ:      Kamus | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [ANms] ? | base=ANms | nv=8 | mana=?→25 | cd=0.0→0.0
+    [AHbz] ? | base=AHbz | nv=4 | mana=750→3000 | cd=120.0→120.0
+    [A009] water wave | base=ACcv | nv=8 | mana=130→550 | cd=6.0→6.0
+    [AHwe] ? | base=AHwe | nv=8 | mana=150→500 | cd=30.0→30.0
+    [A003] ? | base=ACcb | nv=8 | mana=360→1200 | cd=15.0→15.0
+
+  --- CDZ (5 skills) ---
+    [ANms] Energy Preservation | base=ANms | nv=8 | mana=?→25 | cd=0.0→0.0
+    [AHbz] Coffin of Ice | base=AHbz | nv=4 | mana=750→3000 | cd=120.0→120.0
+    [A009] Frost Blast | base=ACcv | nv=8 | mana=130→550 | cd=6.0→6.0
+    [AHwe] Aurora Thunder Attack | base=AHwe | nv=8 | mana=150→500 | cd=30.0→30.0
+    [A003] Diamond Dust | base=ACcb | nv=8 | mana=360→1200 | cd=15.0→15.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A003', 'A009', 'AHbz', 'AHwe', 'ANms']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Hmkg
+  ORIGINAL: Nome King | ?
+  CDZ:      Shion | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [AHtb] ? | base=AHtb | nv=8 | mana=100→800 | cd=10.0→10.0
+    [AUau] Dwarf Endurance | base=AUau | nv=8 | mana=— | cd=—
+    [AHtc] ? | base=AHtc | nv=8 | mana=80→500 | cd=?→6.0
+    [AHbh] Paralyzing Strike | base=AHbh | nv=8 | mana=— | cd=—
+    [AHav] ? | base=AHav | nv=4 | mana=750→3000 | cd=150.0→150.0
+
+  --- CDZ (5 skills) ---
+    [AHtb] Stellar Wreath | base=AHtb | nv=8 | mana=100→800 | cd=10.0→10.0
+    [AUau] Cosmic Endurance | base=AUau | nv=8 | mana=— | cd=—
+    [AHtc] Psionic Move | base=AHtc | nv=8 | mana=80→500 | cd=?→6.0
+    [AHbh] Lyra's Harmony | base=AHbh | nv=0 | mana=— | cd=—
+    [AHav] Stardust Revolution | base=AHav | nv=4 | mana=750→3000 | cd=150.0→150.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['AHav', 'AHbh', 'AHtb', 'AHtc', 'AUau']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Hpal
+  ORIGINAL: ? | ?
+  CDZ:      Mu | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A06G] Blindness | base=Acrs | nv=8 | mana=325→1200 | cd=110.0→40.0
+    [A07Z] ? | base=AHhb | nv=8 | mana=200→900 | cd=8.0→8.0
+    [A00A] Flash Light | base=AEfk | nv=8 | mana=130→550 | cd=?→9.0
+    [A097] Aegis of Light | base=ANht | nv=4 | mana=500→2000 | cd=120.0→120.0
+    [AHad] ? | base=AHad | nv=8 | mana=— | cd=—
+
+  --- CDZ (5 skills) ---
+    [A06G] Crystal Net | base=Acrs | nv=8 | mana=325→1200 | cd=110.0→40.0
+    [A07Z] Advanced Teleportation | base=AEbl | nv=1 | mana=?→? | cd=?→?
+    [A00A] Starlight Extinction | base=AEfk | nv=8 | mana=130→550 | cd=?→9.0
+    [A097] Crystal Wall | base=ANht | nv=4 | mana=500→2000 | cd=120.0→120.0
+    [AHad] Restoration | base=AHad | nv=8 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A00A', 'A06G', 'A07Z', 'A097', 'AHad']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Hvsh
+  ORIGINAL: ? | ?
+  CDZ:      Afrodite | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A09M] Theft of life | base=ANdr | nv=8 | mana=100→800 | cd=?→8.0
+    [A0A8] Dark | base=AUin | nv=8 | mana=160→1000 | cd=18.0→18.0
+    [A09N] ? | base=AEpa | nv=8 | mana=10→80 | cd=?→0.0
+    [A09O] Multi-shot | base=Aroc | nv=8 | mana=?→0 | cd=0.0→2.0
+    [A09P] Nightmare | base=AOws | nv=4 | mana=750→3000 | cd=150.0→150.0
+
+  --- CDZ (5 skills) ---
+    [A09M] Essence of Death | base=ANdr | nv=8 | mana=100→800 | cd=?→8.0
+    [A0A8] Diabolic Roses | base=AUin | nv=8 | mana=160→1000 | cd=18.0→18.0
+    [A09N] Piranha Rose | base=AEpa | nv=8 | mana=10→80 | cd=?→0.0
+    [A09O] Bloody Rose | base=AEsh | nv=1 | mana=?→? | cd=?→?
+    [A09P] Perfume of the Abyss | base=AUau | nv=1 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A09M', 'A09N', 'A09O', 'A09P', 'A0A8']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Hvwd
+  ORIGINAL: Huntress | ?
+  CDZ:      Aioros | AGI
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [A092] Fan of arrows | base=ANbf | nv=8 | mana=100→450 | cd=?→10.0
+    [AHfa] ? | base=AHfa | nv=8 | mana=5→40 | cd=?→0.0
+    [AEar] ? | base=AEar | nv=8 | mana=— | cd=—
+    [A015] explosive arrows | base=Afak | nv=8 | mana=10→80 | cd=?→0.0
+    [A000] Critical Shot | base=AOcr | nv=8 | mana=— | cd=—
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [A092] Sagittarius Arrow | base=ANbf | nv=8 | mana=100→450 | cd=?→10.0
+    [AHfa] Light Vision | base=AHfa | nv=8 | mana=5→40 | cd=?→0.0
+    [AEar] Far Aim | base=AEar | nv=8 | mana=— | cd=—
+    [A015] Atomic Thunder | base=Afak | nv=8 | mana=10→80 | cd=?→0.0
+    [A000] Critical Shot | base=AOcr | nv=4 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A000', 'A015', 'A092', 'AEar', 'AHfa']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### N00W
+  ORIGINAL: Shadow Fiend | ?
+  CDZ:      Milo | AGI
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A08Z] Requiem of Souls | base=ANcl | nv=4 | mana=500→2000 | cd=90.0→60.0
+    [A07T] Shadowraze 200 | base=ANcl | nv=8 | mana=90→300 | cd=7.0→7.0
+    [A08R] Soul Absorption | base=Aamk | nv=1 | mana=— | cd=—
+    [A01R] The face of death | base=ANfb | nv=8 | mana=300→1000 | cd=20.0→20.0
+    [A087] Terrifying Presence | base=ACac | nv=8 | mana=?→0 | cd=?→0.0
+
+  --- CDZ (5 skills) ---
+    [A08Z] Scarlet Needle: Antares | base=ANcl | nv=4 | mana=500→2000 | cd=90.0→60.0
+    [A07T] Scarlet Needle | base=Ahea | nv=8 | mana=— | cd=—
+    [A08R] Poison Sting | base=Apoi | nv=8 | mana=— | cd=—
+    [A01R] Restriction | base=ANss | nv=1 | mana=— | cd=30.0→?
+    [A087] Terrifying Presence | base=ACac | nv=8 | mana=?→0 | cd=?→0.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A01R', 'A07T', 'A087', 'A08R', 'A08Z']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Nbst
+  ORIGINAL: ? | ?
+  CDZ:      Orpheu | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A06S] bestial fury | base=ACbl | nv=8 | mana=50→400 | cd=5.0→5.0
+    [ANsw] ? | base=ANsw | nv=4 | mana=400→1600 | cd=120.0→120.0
+    [A06W] Bear | base=ACs8 | nv=8 | mana=150→500 | cd=30.0→30.0
+    [A06X] Wolves | base=ANsg | nv=8 | mana=180→600 | cd=?→40.0
+    [AEah] ? | base=AEah | nv=8 | mana=— | cd=—
+
+  --- CDZ (5 skills) ---
+    [A06S] Stringer Nocturne | base=AHca | nv=0 | mana=— | cd=—
+    [ANsw] Serenade do Adeus | base=AUsl | nv=0 | mana=?→? | cd=?→?
+    [A06W] Stringer Requiem | base=AHfs | nv=0 | mana=?→? | cd=?→?
+    [A06X] Melodia Protetora | base=Ainf | nv=0 | mana=?→? | cd=?→?
+    [AEah] Lyra's Harmony | base=AHbh | nv=0 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A06S', 'A06W', 'A06X', 'AEah', 'ANsw']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Nklj
+  ORIGINAL: Lord of Fire | ?
+  CDZ:      Ikki | STR
+  Skills originais: 6
+  Skills CDZ:       5
+
+  --- ORIGINAL (6 skills) ---
+    [ANlm] Flame Atronach | base=ANlm | nv=8 | mana=100→450 | cd=20.0→20.0
+    [ANrf] ? | base=ANrf | nv=8 | mana=200→900 | cd=12.0→12.0
+    [ANso] ? | base=ANso | nv=8 | mana=350→1400 | cd=30.0→30.0
+    [A03K] Fire Shield | base=Absk | nv=8 | mana=400→1100 | cd=130.0→60.0
+    [A0A1] Fire storm | base=ANrc | nv=4 | mana=700→2800 | cd=?→120.0
+    [???] AInv — NAO ENCONTRADA
+
+  --- CDZ (5 skills) ---
+    [ANlm] Ave Fenix | base=ANlm | nv=8 | mana=100→450 | cd=20.0→20.0
+    [ANrf] Flames of Revenge | base=ANrf | nv=8 | mana=200→900 | cd=12.0→12.0
+    [ANso] Phoenix Genmaken | base=ANso | nv=8 | mana=350→1400 | cd=30.0→30.0
+    [A03K] Phoenix Regeneration | base=ANms | nv=1 | mana=— | cd=—
+    [A0A1] Hoyouku Tenshou | base=ANto | nv=1 | mana=?→? | cd=?→?
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A03K', 'A0A1', 'ANlm', 'ANrf', 'ANso']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Npbm
+  ORIGINAL: Panda | ?
+  CDZ:      Geki | STR
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A0GZ] Ground Strike | base=AHtc | nv=8 | mana=80→500 | cd=8.0→8.0
+    [A086] fire breath | base=ACbf | nv=8 | mana=170→800 | cd=15.0→15.0
+    [ANdb] Your style | base=ANdb | nv=8 | mana=— | cd=—
+    [A088] ? | base=ACac | nv=8 | mana=?→0 | cd=?→0.0
+    [A00F] Chains of flame | base=ANcl | nv=4 | mana=400→1600 | cd=90.0→90.0
+
+  --- CDZ (5 skills) ---
+    [A0GZ] Quake | base=AHtc | nv=8 | mana=80→500 | cd=8.0→8.0
+    [A086] Hanging Bear | base=ACbf | nv=8 | mana=170→800 | cd=15.0→15.0
+    [ANdb] Physical Strength | base=ANdb | nv=8 | mana=— | cd=—
+    [A088] Roar | base=ACac | nv=8 | mana=?→0 | cd=?→0.0
+    [A00F] Chains of Flame | base=ANcl | nv=4 | mana=400→1600 | cd=90.0→90.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A00F', 'A086', 'A088', 'A0GZ', 'ANdb']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Obla
+  ORIGINAL: ? | ?
+  CDZ:      Shura | STR
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A0BT] Mass disarmament | base=ANcl | nv=4 | mana=400→1600 | cd=120.0→120.0
+    [AOwk] ? | base=AOwk | nv=8 | mana=120→400 | cd=10.0→10.0
+    [AOcr] ? | base=AOcr | nv=8 | mana=— | cd=—
+    [A074] ? | base=AOmi | nv=8 | mana=140→700 | cd=100.0→30.0
+    [A08M] ? | base=AOww | nv=8 | mana=150→500 | cd=15.0→15.0
+
+  --- CDZ (5 skills) ---
+    [A0BT] Excalibur | base=ANcl | nv=4 | mana=400→1600 | cd=120.0→120.0
+    [AOwk] Diffusal Slash | base=AOwk | nv=8 | mana=120→400 | cd=10.0→10.0
+    [AOcr] Vorpal Strike | base=AOcr | nv=8 | mana=— | cd=—
+    [A074] Afterimage | base=AOmi | nv=8 | mana=140→700 | cd=100.0→30.0
+    [A08M] Hurricane Blade | base=AOww | nv=8 | mana=150→500 | cd=15.0→15.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A074', 'A08M', 'A0BT', 'AOcr', 'AOwk']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Ogrh
+  ORIGINAL: Guardian of the Depths | ?
+  CDZ:      Shiryu | STR
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A06Y] Fury of the Naga | base=Absk | nv=8 | mana=75→250 | cd=40.0→40.0
+    [A072] Tail strike | base=AOws | nv=8 | mana=110→600 | cd=12.0→12.0
+    [A08Q] Amphibian scales | base=Assk | nv=8 | mana=?→0 | cd=?→0.0
+    [A071] Heavy Trident | base=AHbh | nv=8 | mana=— | cd=—
+    [A099] Power of the Sea | base=AEsf | nv=4 | mana=450→1800 | cd=150.0→150.0
+
+  --- CDZ (5 skills) ---
+    [A06Y] Rozan Shoryu Ha | base=Absk | nv=8 | mana=75→250 | cd=40.0→40.0
+    [A072] Colera do Dragao | base=AOws | nv=8 | mana=110→600 | cd=12.0→12.0
+    [A08Q] Legendary Shield of the Dragon | base=Assk | nv=8 | mana=?→0 | cd=?→0.0
+    [A071] Dragon Crush | base=AHbh | nv=8 | mana=— | cd=—
+    [A099] Colera dos Cem Dragoes | base=AEsf | nv=4 | mana=450→1800 | cd=150.0→150.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A06Y', 'A071', 'A072', 'A08Q', 'A099']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Oshd
+  ORIGINAL: ? | ?
+  CDZ:      Shaka | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A049] electric shock | base=AUin | nv=8 | mana=200→900 | cd=17.0→10.0
+    [A042] ? | base=Afbk | nv=8 | mana=?→0 | cd=?→0.0
+    [ANhx] ? | base=ANhx | nv=8 | mana=350→1400 | cd=130.0→60.0
+    [Arsw] ? | base=Arsw | nv=8 | mana=100→800 | cd=20.0→20.0
+    [A044] Lightning Spirit | base=ACs8 | nv=4 | mana=600→2400 | cd=90.0→90.0
+
+  --- CDZ (5 skills) ---
+    [A049] Tenma Kofuku | base=AUin | nv=8 | mana=200→900 | cd=17.0→10.0
+    [A042] Ohm | base=Afbk | nv=8 | mana=?→0 | cd=?→0.0
+    [ANhx] Tenbu Horin | base=ANhx | nv=8 | mana=350→1400 | cd=130.0→60.0
+    [Arsw] Tenku Haja Chimimoryo | base=Arsw | nv=8 | mana=100→800 | cd=20.0→20.0
+    [A044] Rikudo Rinne | base=ACs8 | nv=4 | mana=600→2400 | cd=90.0→90.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A042', 'A044', 'A049', 'ANhx', 'Arsw']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Otch
+  ORIGINAL: Chieftain of the Minotaurs | ?
+  CDZ:      Dohko | STR
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [A00P] Aura of Anger | base=AHad | nv=4 | mana=— | cd=—
+    [AOsh] wave of power | base=AOsh | nv=8 | mana=80→500 | cd=?→8.0
+    [AOws] ? | base=AOws | nv=8 | mana=140→700 | cd=15.0→15.0
+    [A00W] ? | base=ACpv | nv=8 | mana=?→0 | cd=?→0.0
+    [AOae] Endurance | base=AOae | nv=8 | mana=— | cd=—
+
+  --- CDZ (5 skills) ---
+    [A00P] Aura of Justice | base=AHad | nv=4 | mana=— | cd=—
+    [AOsh] Flurry of Weapons | base=AOsh | nv=8 | mana=80→500 | cd=?→8.0
+    [AOws] Alternate Weapon | base=AOws | nv=8 | mana=140→700 | cd=15.0→15.0
+    [A00W] Balance of Justice | base=ACpv | nv=8 | mana=?→0 | cd=?→0.0
+    [AOae] Rozan Hyaku Ryu Ha | base=AOae | nv=8 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A00P', 'A00W', 'AOae', 'AOsh', 'AOws']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Ucrl
+  ORIGINAL: ? | ?
+  CDZ:      Shun | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [AUim] ? | base=AUim | nv=8 | mana=140→700 | cd=13.0→13.0
+    [AUts] ? | base=AUts | nv=8 | mana=— | cd=—
+    [A0F7] scarab beetles | base=ANsg | nv=8 | mana=200→900 | cd=30.0→30.0
+    [AUls] ? | base=AUls | nv=4 | mana=450→1800 | cd=120.0→120.0
+    [A020] ? | base=Apoi | nv=8 | mana=?→0 | cd=?→0.0
+
+  --- CDZ (5 skills) ---
+    [AUim] Tempestade Nebulosa | base=AUim | nv=8 | mana=140→700 | cd=13.0→13.0
+    [AUts] Defesa Circular | base=AUts | nv=8 | mana=— | cd=—
+    [A0F7] Manifestation | base=ANsg | nv=8 | mana=200→900 | cd=30.0→30.0
+    [AUls] Formacoes de Combate | base=AUls | nv=4 | mana=450→1800 | cd=120.0→120.0
+    [A020] Onda Relampago | base=Apoi | nv=8 | mana=?→0 | cd=?→0.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A020', 'A0F7', 'AUim', 'AUls', 'AUts']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Udre
+  ORIGINAL: ? | ?
+  CDZ:      DeathMask | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [AUcs] ? | base=AUcs | nv=8 | mana=?→450 | cd=8.0→8.0
+    [A01P] Meteorite | base=ANin | nv=8 | mana=190→1100 | cd=20.0→20.0
+    [A00H] ? | base=ANht | nv=8 | mana=200→900 | cd=40.0→40.0
+    [AUin] ? | base=AUin | nv=4 | mana=500→2000 | cd=150.0→150.0
+    [AUav] ? | base=AUav | nv=8 | mana=— | cd=—
+
+  --- CDZ (5 skills) ---
+    [AUcs] Darkworld Waves | base=AUcs | nv=8 | mana=?→450 | cd=8.0→8.0
+    [A01P] Animate Corpses | base=Aeat | nv=1 | mana=?→? | cd=?→?
+    [A00H] Chilling Scream | base=ANht | nv=8 | mana=200→900 | cd=40.0→40.0
+    [AUin] Swarm of Spirits | base=AUin | nv=4 | mana=500→2000 | cd=150.0→150.0
+    [AUav] Vampiric Aura | base=AUav | nv=8 | mana=— | cd=—
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A00H', 'A01P', 'AUav', 'AUcs', 'AUin']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+======================================================================
+### Ulic
+  ORIGINAL: ? | ?
+  CDZ:      Hyoga | INT
+  Skills originais: 5
+  Skills CDZ:       5
+
+  --- ORIGINAL (5 skills) ---
+    [AUfn] ? | base=AUfn | nv=8 | mana=170→800 | cd=10.0→10.0
+    [A0FF] ice explosion | base=ANcl | nv=8 | mana=200→900 | cd=12.0→12.0
+    [A062] Ice power | base=AOae | nv=8 | mana=— | cd=—
+    [AUfu] ? | base=AUfu | nv=8 | mana=150→500 | cd=5.0→5.0
+    [A035] ice golem | base=ANsg | nv=4 | mana=600→2400 | cd=100.0→100.0
+
+  --- CDZ (5 skills) ---
+    [AUfn] Aurora Thunder Attack | base=AUfn | nv=8 | mana=170→800 | cd=10.0→10.0
+    [A0FF] Diamond Dust | base=ANcl | nv=8 | mana=200→900 | cd=12.0→12.0
+    [A062] Breeze of the North | base=AOae | nv=8 | mana=— | cd=—
+    [AUfu] Ice Armor | base=AUfu | nv=8 | mana=150→500 | cd=5.0→5.0
+    [A035] Ice Golem | base=ANsg | nv=4 | mana=600→2400 | cd=100.0→100.0
+
+  ANÁLISE:
+    Skills mantidas (mesmo código): 5
+      ['A035', 'A062', 'A0FF', 'AUfn', 'AUfu']
+    Skills removidas: 0
+    Skills adicionadas (CDZ): 0
+
+
+======================================================================
+RESUMO GLOBAL
+  Skills mantidas:    126
+  Skills removidas:   4
+  Skills adicionadas: 4

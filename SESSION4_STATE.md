@@ -255,3 +255,17 @@ Total: 7 heróis processados, 14 skills convertidas, 4 mantidas.
 - Kamus (N40B)
 - Hyoga (N40E)
 - Shiryu (N40F)
+
+## Comparativo Original vs CDZ (2026-09-24)
+
+- Total heróis comparados: 26
+- Skills mantidas (mesmo código): 126 (96%)
+- Skills renomeadas (native→custom): 4 (Shina 2, Siegfried 2)
+- Skills perdidas de fato: 0
+
+### Renomeações identificadas (são upgrades):
+- Shina: AEfk → A0HA (Shuriken Storm), AEsh → A0HB (Poisoned Kunai)
+- Siegfried: AHfs → A008 (Drake Skin), AHpx → A0F5 (Dragon's Blizzard)
+
+Conclusão: a conversão CDZ foi estruturalmente limpa.
+Não há skills perdidas — só upgrades de nativo pra custom.
