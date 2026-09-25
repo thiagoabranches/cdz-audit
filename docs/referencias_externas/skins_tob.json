@@ -1,0 +1,200 @@
+[
+  {
+    "codigo": "Hblm",
+    "base_nativa": "Hblm",
+    "nome": null,
+    "nome_proprio": "TRIGSTR_1089",
+    "modelo": null,
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNBloodMage2.tga",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNBloodMage2.tga",
+    "uhab": "AOs2,A02X,AUav,ANdp"
+  },
+  {
+    "codigo": "Emoo",
+    "base_nativa": "Emoo",
+    "nome": "TRIGSTR_1094",
+    "nome_proprio": "TRIGSTR_1095",
+    "modelo": null,
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNPriestessoftheMoon.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNPriestessoftheMoon.blp",
+    "uhab": "Aroc,AEev,AOsf,ANwm"
+  },
+  {
+    "codigo": "H005",
+    "base_nativa": "Hamg",
+    "nome": "TRIGSTR_135",
+    "nome_proprio": "TRIGSTR_917",
+    "modelo": "Units\\Human\\Sorceress\\Sorceress.mdl",
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNJean.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNJean.blp",
+    "uhab": "A00G,A00R,AHfs,A00W"
+  },
+  {
+    "codigo": "E003",
+    "base_nativa": "Edem",
+    "nome": "TRIGSTR_133",
+    "nome_proprio": "TRIGSTR_134",
+    "modelo": null,
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNLeto.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNLeto.blp",
+    "uhab": "A003,A001,A004,A000"
+  },
+  {
+    "codigo": "H002",
+    "base_nativa": "Hmkg",
+    "nome": "TRIGSTR_136",
+    "nome_proprio": "TRIGSTR_609",
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNHeroMountainKing.tga",
+    "uhab": "AOre,A00D,A00Y,A00K,A00E"
+  },
+  {
+    "codigo": "N006",
+    "base_nativa": "Nbbc",
+    "nome": "TRIGSTR_138",
+    "nome_proprio": "TRIGSTR_139",
+    "modelo": null,
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNMusashi.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNMusashi.blp",
+    "uhab": "A01B,A00X,A01J,A01I"
+  },
+  {
+    "codigo": "E002",
+    "base_nativa": "Emfr",
+    "nome": "TRIGSTR_169",
+    "nome_proprio": "TRIGSTR_1065",
+    "modelo": null,
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNFurion.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNFurion.blp",
+    "uhab": "A02O,AIrl,A00O,A021"
+  },
+  {
+    "codigo": "H006",
+    "base_nativa": "Hlgr",
+    "nome": "TRIGSTR_172",
+    "nome_proprio": "TRIGSTR_173",
+    "modelo": "units\\undead\\EvilArthas\\UndeadArthas.mdl",
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNArthas.tga",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNArthas.tga",
+    "uhab": "A02M,A012,A02T,AHad"
+  },
+  {
+    "codigo": "N008",
+    "base_nativa": "Npbm",
+    "nome": "TRIGSTR_223",
+    "nome_proprio": "TRIGSTR_217",
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNPandarenBrewmaster.tga",
+    "uhab": "A026,A028,A027,A02A"
+  },
+  {
+    "codigo": "H007",
+    "base_nativa": "Hapm",
+    "nome": "TRIGSTR_140",
+    "nome_proprio": "TRIGSTR_175",
+    "modelo": null,
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNCervantes.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNCervantes.blp",
+    "uhab": "A007,A009,A002,AUdc"
+  },
+  {
+    "codigo": "E005",
+    "base_nativa": "Ewar",
+    "nome": null,
+    "nome_proprio": null,
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNHeroWarden.tga",
+    "uhab": "AHmt,A01Y,A01X,A01Z"
+  },
+  {
+    "codigo": "H008",
+    "base_nativa": "Hblm",
+    "nome": "TRIGSTR_137",
+    "nome_proprio": null,
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNHeroBloodElfPrince.tga",
+    "uhab": "A00U,A00F,A008,A01H"
+  },
+  {
+    "codigo": "O00A",
+    "base_nativa": "Oshd",
+    "nome": "TRIGSTR_176",
+    "nome_proprio": "TRIGSTR_011",
+    "modelo": "units\\creeps\\Medivh\\Medivh.mdl",
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNScion.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNScion.blp",
+    "uhab": "A01S,A02F,A02Y,A02S"
+  },
+  {
+    "codigo": "U002",
+    "base_nativa": "Ucrl",
+    "nome": null,
+    "nome_proprio": null,
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNHeroCryptLord.tga",
+    "uhab": "A01W,A01U,A01V,A01T"
+  },
+  {
+    "codigo": "N007",
+    "base_nativa": "Nmag",
+    "nome": "TRIGSTR_146",
+    "nome_proprio": "TRIGSTR_177",
+    "modelo": "units\\undead\\AbominationCIN\\AbominationCIN.mdl",
+    "icone": "ReplaceableTextures\\CommandButtons\\BTNAbomination.blp",
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNAbomination.blp",
+    "uhab": "A02N,A02W,A01N,A01M,A01L"
+  },
+  {
+    "codigo": "N00J",
+    "base_nativa": "Nklj",
+    "nome": null,
+    "nome_proprio": "TRIGSTR_000",
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNKiljaedin.tga",
+    "uhab": "A00Z,A01C,A013,A00H"
+  },
+  {
+    "codigo": "N00K",
+    "base_nativa": "Nbrn",
+    "nome": null,
+    "nome_proprio": null,
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNBansheeRanger.tga",
+    "uhab": "A01P,A02B,A015,A01K"
+  },
+  {
+    "codigo": "O00B",
+    "base_nativa": "Orkn",
+    "nome": null,
+    "nome_proprio": null,
+    "modelo": null,
+    "icone": null,
+    "portrait": null,
+    "scorescreen": "ReplaceableTextures\\CommandButtons\\BTNShadowHunter.tga",
+    "uhab": "A02C,A02L,A014,A010"
+  }
+]
