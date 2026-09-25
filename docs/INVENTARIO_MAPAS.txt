@@ -1,0 +1,50 @@
+═══════════════════════════════════════════════════════
+INVENTARIO DE MAPAS — 25/09/2026
+═══════════════════════════════════════════════════════
+
+╔══ MAPAS DO PROJETO (x-hero) ══╗
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 mapa.w3x (X-Hero CDZ ATUAL)
+   pasta: w3u/
+   w3a: 130 orig + 731 custom (1178887 bytes)
+   w3u: 102 orig + 279 custom
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 X_Hero_Reborn_1_3_FIX.w3x (ORIGINAL sem CDZ)
+   pasta: w3u_xhero_orig/
+   w3a: 130 orig + 619 custom (944703 bytes)
+   w3u: 102 orig + 225 custom
+
+╔══ CDZ DOTA — VERSÕES ══╗
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 Sacred War Revolution v5.0e
+   pasta: w3u_cdz/
+   w3a: nao extraido
+   w3u: nao extraido
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 Sacred War Revolution v2.4
+   pasta: w3u_cdz_v24/
+   w3a: 299 orig + 6 custom (216626 bytes)
+   w3u: 75 orig + 0 custom
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 Sacred 6.0 b1.8
+   pasta: w3u_cdz_v60/
+   w3a: 151 orig + 0 custom (87935 bytes)
+   w3u: nao extraido
+
+╔══ REFERENCIA EXTERNA ══╗
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 Tides of Blood Beta v99m
+   pasta: w3u_tob/
+   w3a: 56 orig + 86 custom (114708 bytes)
+   w3u: 37 orig + 81 custom
+
+
+═══════════════════════════════════════════════════════
+FIM DO INVENTARIO
+═══════════════════════════════════════════════════════
