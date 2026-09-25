@@ -78,9 +78,9 @@ def main():
     for c in comuns:
         dif_campos = []
         if m1[c]['base'] != m2[c]['base']:
-            dif_campos.append(f"base: {m1[c]['base']} → {m2[c]['base']}")
+            dif_campos.append(f"base: {m1[c]['base']} -> {m2[c]['base']}")
         if m1[c]['anam'] != m2[c]['anam']:
-            dif_campos.append(f"anam: {m1[c]['anam']} → {m2[c]['anam']}")
+            dif_campos.append(f"anam: {m1[c]['anam']} -> {m2[c]['anam']}")
         
         for f in set(list(m1[c]['mods'].keys()) + list(m2[c]['mods'].keys())):
             v1 = m1[c]['mods'].get(f, {})
@@ -89,7 +89,7 @@ def main():
                 n1 = len([k for k in v1.keys() if k > 0])
                 n2 = len([k for k in v2.keys() if k > 0])
                 if n1 != n2:
-                    dif_campos.append(f"  campo {f}: {n1} níveis → {n2} níveis")
+                    dif_campos.append(f"  campo {f}: {n1} níveis -> {n2} níveis")
                 else:
                     dif_campos.append(f"  campo {f}: VALORES mudaram")
         

@@ -1,0 +1,618 @@
+Lendo entrega_09h00/local/mapa_baseline.w3x...
+  Skills: 860
+Lendo entrega_09h00/claude/mapa_claude.w3x...
+  Skills: 860
+
+=== Skills comuns: 860 ===
+=== Só no MAPA 1: 0 ===
+=== Só no MAPA 2: 0 ===
+
+=== DIFERENÇAS EM SKILLS COMUNS ===
+
+[A000]
+    campo aub1: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+
+[A008]
+  base: AHpx -> AHwe
+    campo aub1: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo ahdu: 3 níveis -> 8 níveis
+    campo atp1: 4 níveis -> 8 níveis
+    campo Hwe1: 4 níveis -> 0 níveis
+    campo adur: 3 níveis -> 8 níveis
+    campo aare: 3 níveis -> 0 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+
+[A00A]
+  base: AEfk -> AHtc
+    campo aub1: VALORES mudaram
+    campo Efk2: 8 níveis -> 0 níveis
+    campo aeat: VALORES mudaram
+    campo achd: VALORES mudaram
+    campo Htc1: 0 níveis -> 8 níveis
+    campo acdn: 5 níveis -> 8 níveis
+    campo Efk1: 8 níveis -> 0 níveis
+    campo amac: VALORES mudaram
+
+[A00F]
+    campo aub1: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+
+[A00N]
+    campo arut: VALORES mudaram
+
+[A00S]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 1 níveis -> 8 níveis
+
+[A00W]
+  base: ACpv -> ANfd
+    campo aub1: VALORES mudaram
+    campo aran: 0 níveis -> 8 níveis
+    campo acdn: 7 níveis -> 8 níveis
+    campo amcs: 7 níveis -> 8 níveis
+    campo atp1: VALORES mudaram
+    campo Nfd1: 0 níveis -> 8 níveis
+
+[A00X]
+  base: ANfb -> ANcl
+    campo aub1: 1 níveis -> 8 níveis
+    campo aran: 4 níveis -> 8 níveis
+    campo Htb1: 4 níveis -> 0 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo ahdu: 4 níveis -> 0 níveis
+    campo abuf: 4 níveis -> 0 níveis
+    campo adur: 4 níveis -> 0 níveis
+    campo Ncl1: 0 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+  ... +2 mudanças
+
+[A017]
+  anam: Hecatombe dos Espiritos (Sekishiki Tenryouha) -> Spirits' Hecatomb
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[A01P]
+  base: Aeat -> AUcb
+    campo aub1: 1 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo abuf: 0 níveis -> 8 níveis
+    campo adur: 0 níveis -> 8 níveis
+    campo atp1: 1 níveis -> 8 níveis
+    campo aran: 0 níveis -> 8 níveis
+    campo Rai1: 0 níveis -> 8 níveis
+    campo amcs: 0 níveis -> 8 níveis
+  ... +1 mudanças
+
+[A01R]
+    campo aub1: 1 níveis -> 8 níveis
+    campo acdn: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo abuf: 0 níveis -> 8 níveis
+    campo atp1: 1 níveis -> 8 níveis
+
+[A020]
+  anam: Onda Relampago -> Lightning Wave
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[A02U]
+  base: ACs8 -> ANsi
+    campo aub1: 4 níveis -> 8 níveis
+    campo aare: 0 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo ahdu: 4 níveis -> 8 níveis
+    campo abuf: 4 níveis -> 0 níveis
+    campo adur: 4 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+
+[A031]
+  anam: Leash Flute (Mind Control) -> Sorento's Command
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo adur: 1 níveis -> 8 níveis
+    campo aret: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+    campo anam: VALORES mudaram
+    campo amcs: 1 níveis -> 8 níveis
+    campo ahdu: 1 níveis -> 8 níveis
+
+[A035]
+    campo aub1: VALORES mudaram
+
+[A036]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+    campo Omi1: 1 níveis -> 8 níveis
+
+[A03C]
+  base: Asth -> AHds
+    campo aub1: 5 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo ahdu: 0 níveis -> 8 níveis
+    campo abuf: 0 níveis -> 8 níveis
+    campo adur: 0 níveis -> 8 níveis
+    campo amcs: 0 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 5 níveis -> 8 níveis
+
+[A03H]
+  base: AHdr -> ANsb
+    campo aefl: VALORES mudaram
+    campo aub1: 4 níveis -> 8 níveis
+    campo alig: VALORES mudaram
+    campo Ndr9: 4 níveis -> 0 níveis
+    campo Ndr8: 4 níveis -> 0 níveis
+    campo Ndr3: 4 níveis -> 0 níveis
+    campo acas: 1 níveis -> 0 níveis
+    campo aran: 4 níveis -> 8 níveis
+    campo Ndr5: 4 níveis -> 0 níveis
+  ... +11 mudanças
+
+[A03I]
+  base: AId7 -> AOcl
+    campo aub1: 0 níveis -> 8 níveis
+    campo aran: 0 níveis -> 8 níveis
+    campo acdn: 7 níveis -> 8 níveis
+    campo abuf: 0 níveis -> 8 níveis
+    campo Ocl1: 0 níveis -> 8 níveis
+    campo amcs: 7 níveis -> 8 níveis
+    campo Ocl2: 0 níveis -> 8 níveis
+
+[A03K]
+  base: ANms -> Asth
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 1 níveis -> 8 níveis
+
+[A05Z]
+  base: AOcr -> AOwk
+    campo aub1: 4 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo Owk2: 0 níveis -> 8 níveis
+    campo ahdu: 0 níveis -> 8 níveis
+    campo adur: 0 níveis -> 8 níveis
+    campo amcs: 0 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+    campo arut: VALORES mudaram
+  ... +1 mudanças
+
+[A067]
+  base: ACac -> ACsh
+    campo aub1: 2 níveis -> 8 níveis
+    campo Osh1: 0 níveis -> 8 níveis
+    campo Ear3: 1 níveis -> 0 níveis
+    campo aare: 1 níveis -> 8 níveis
+    campo aran: 0 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo Cac1: 2 níveis -> 0 níveis
+    campo Osh3: 0 níveis -> 8 níveis
+    campo abuf: 2 níveis -> 8 níveis
+  ... +4 mudanças
+
+[A06G]
+  base: Acrs -> AHtb
+    campo aub1: VALORES mudaram
+    campo Crs0: 8 níveis -> 0 níveis
+    campo acas: 7 níveis -> 0 níveis
+    campo Htb1: 0 níveis -> 8 níveis
+    campo ahdu: VALORES mudaram
+    campo adur: VALORES mudaram
+
+[A06S]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+    campo Hca1: 1 níveis -> 8 níveis
+
+[A06V]
+  base: Auhf -> ANfb
+  anam: Ultimo Dragao: Colera Eterna -> The Last Dragon
+    campo aub1: 1 níveis -> 8 níveis
+    campo Uhf1: 1 níveis -> 0 níveis
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo aran: 1 níveis -> 8 níveis
+    campo Htb1: 0 níveis -> 8 níveis
+    campo acdn: 1 níveis -> 8 níveis
+    campo ahdu: 1 níveis -> 8 níveis
+  ... +6 mudanças
+
+[A06W]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo Hfs1: 1 níveis -> 8 níveis
+    campo aret: VALORES mudaram
+    campo Hfs2: 1 níveis -> 8 níveis
+    campo atp1: 0 níveis -> 8 níveis
+
+[A06X]
+  anam: Melodia Protetora -> Protective Melody
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+    campo Inf1: 1 níveis -> 8 níveis
+    campo anam: VALORES mudaram
+
+[A06Y]
+    campo aub1: VALORES mudaram
+
+[A071]
+    campo aub1: VALORES mudaram
+
+[A072]
+  anam: Colera do Dragao -> Dragon's Rage
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[A075]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+    campo Inf1: 1 níveis -> 8 níveis
+
+[A07E]
+  base: AEme -> AHav
+    campo aub1: 4 níveis -> 8 níveis
+    campo acdn: 3 níveis -> 8 níveis
+    campo ahdu: 3 níveis -> 8 níveis
+    campo abuf: 4 níveis -> 8 níveis
+    campo adur: 4 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo Hav3: 0 níveis -> 8 níveis
+    campo atp1: 4 níveis -> 8 níveis
+
+[A07N]
+    campo Esf1: 1 níveis -> 8 níveis
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+
+[A08E]
+  anam: Labirinto de Gemeos e Ilusionismo -> Shina's Reckoning
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: 1 níveis -> 8 níveis
+    campo anam: VALORES mudaram
+
+[A08H]
+    campo aub1: VALORES mudaram
+
+[A099]
+  anam: Colera dos Cem Dragoes -> Rage of a Hundred Dragons
+    campo aub1: VALORES mudaram
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[A09M]
+    campo aub1: VALORES mudaram
+
+[A09O]
+  base: AEsh -> Auhf
+    campo aub1: 1 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo Uhf2: 0 níveis -> 8 níveis
+    campo ahdu: 0 níveis -> 8 níveis
+    campo atp1: 1 níveis -> 8 níveis
+    campo adur: 0 níveis -> 8 níveis
+    campo acas: 0 níveis -> 8 níveis
+    campo Uhf1: 0 níveis -> 8 níveis
+  ... +2 mudanças
+
+[A0A1]
+  base: ANto -> AHtc
+    campo aub1: 1 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo abuf: 0 níveis -> 8 níveis
+    campo ahdu: 0 níveis -> 8 níveis
+    campo adur: 1 níveis -> 8 níveis
+    campo atp1: 1 níveis -> 8 níveis
+    campo aran: 0 níveis -> 8 níveis
+    campo amcs: 0 níveis -> 8 níveis
+  ... +1 mudanças
+
+[A0A8]
+    campo aub1: VALORES mudaram
+
+[A0BB]
+  base: ANab -> ANdh
+    campo aub1: 4 níveis -> 8 níveis
+    campo aare: 4 níveis -> 8 níveis
+    campo aran: 3 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo ahdu: 4 níveis -> 8 níveis
+    campo abuf: 4 níveis -> 8 níveis
+    campo adur: 4 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+  ... +1 mudanças
+
+[A0BT]
+  base: ANcl -> AOww
+    campo aub1: 4 níveis -> 8 níveis
+    campo aran: 4 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo ahdu: 1 níveis -> 8 níveis
+    campo abuf: 0 níveis -> 8 níveis
+    campo adur: 1 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+  ... +1 mudanças
+
+[A0BV]
+  base: ANcl -> ANto
+  anam: Tempestade Nebulosa (Nebula Storm) -> Nebula Storm
+    campo aub1: 3 níveis -> 8 níveis
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo aran: 3 níveis -> 8 níveis
+    campo acdn: 3 níveis -> 8 níveis
+    campo ahdu: 0 níveis -> 8 níveis
+    campo adur: 0 níveis -> 8 níveis
+    campo amcs: 3 níveis -> 8 níveis
+  ... +2 mudanças
+
+[A0F7]
+  base: ANsg -> Aens
+    campo aub1: VALORES mudaram
+    campo aran: 0 níveis -> 8 níveis
+    campo acdn: VALORES mudaram
+    campo ahdu: VALORES mudaram
+    campo adur: VALORES mudaram
+    campo amcs: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[A0FF]
+    campo aub1: VALORES mudaram
+
+[A0GB]
+  anam: Ondas do Inferno (Sekishiki Meikai Ha) -> Waves of Hell (Sekishiki Meikai Ha)
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[A0GL]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo Ocl1: 1 níveis -> 8 níveis
+    campo atp1: 0 níveis -> 8 níveis
+
+[A0GM]
+    campo aub1: 1 níveis -> 8 níveis
+    campo Osh1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+
+[A0GQ]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+
+[A0GS]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+
+[A0H0]
+  anam: None -> Bear's Fury
+    campo aub1: VALORES mudaram
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo alev: VALORES mudaram
+    campo atp1: 5 níveis -> 8 níveis
+
+[A400]
+    campo aub1: 4 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo ahdu: 4 níveis -> 8 níveis
+    campo abuf: 4 níveis -> 8 níveis
+    campo adur: 4 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+
+[A401]
+    campo aub1: 4 níveis -> 8 níveis
+    campo Hea1: 4 níveis -> 8 níveis
+    campo aran: 4 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo abuf: 3 níveis -> 7 níveis
+    campo amcs: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+
+[A402]
+    campo aub1: 5 níveis -> 8 níveis
+    campo Htc3: 5 níveis -> 8 níveis
+    campo Htc1: 5 níveis -> 8 níveis
+    campo acas: 5 níveis -> 8 níveis
+    campo aare: 5 níveis -> 8 níveis
+    campo acdn: 5 níveis -> 8 níveis
+    campo ahdu: 5 níveis -> 8 níveis
+    campo abuf: 5 níveis -> 8 níveis
+    campo adur: 5 níveis -> 8 níveis
+    campo amcs: 5 níveis -> 8 níveis
+  ... +3 mudanças
+
+[A403]
+    campo Nms1: 4 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo aub1: 4 níveis -> 8 níveis
+    campo amcs: 3 níveis -> 7 níveis
+    campo Nms2: 4 níveis -> 8 níveis
+    campo abuf: 4 níveis -> 8 níveis
+    campo atp1: 4 níveis -> 8 níveis
+
+[AEah]
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+
+[AEev]
+  anam: Labirinto de Gemeos e Ilusionismo -> Gemini Labyrinth
+    campo aret: VALORES mudaram
+    campo atp1: VALORES mudaram
+    campo anam: VALORES mudaram
+
+[AEim]
+  base: AEim -> AOmi
+    campo aub1: VALORES mudaram
+    campo acas: 0 níveis -> 8 níveis
+    campo aare: 8 níveis -> 0 níveis
+    campo aran: 0 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo abuf: 5 níveis -> 0 níveis
+    campo Omi2: 0 níveis -> 8 níveis
+    campo amcs: VALORES mudaram
+    campo atp1: VALORES mudaram
+  ... +1 mudanças
+
+[AEme]
+  anam: Bencao da Deusa da Sabedoria -> Blessing of Wisdom
+    campo anam: VALORES mudaram
+    campo atp1: VALORES mudaram
+    campo aret: VALORES mudaram
+
+[AHad]
+  base: AHad -> Ahea
+    campo aub1: 5 níveis -> 8 níveis
+    campo Hea1: 0 níveis -> 8 níveis
+    campo aare: 5 níveis -> 0 níveis
+    campo aran: 0 níveis -> 8 níveis
+    campo acdn: 0 níveis -> 8 níveis
+    campo abuf: 5 níveis -> 8 níveis
+    campo amcs: 0 níveis -> 8 níveis
+
+[AHav]
+  base: AHav -> Afod
+    campo aub1: 4 níveis -> 8 níveis
+    campo acas: 3 níveis -> 8 níveis
+    campo aran: 0 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo amcs: 4 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo atp1: 4 níveis -> 8 níveis
+    campo Nfd1: 0 níveis -> 8 níveis
+
+[AHbz]
+  base: AHbz -> Awfb
+    campo aub1: 4 níveis -> 8 níveis
+    campo aeff: 1 níveis -> 0 níveis
+    campo Hbz2: 4 níveis -> 0 níveis
+    campo Hbz6: 4 níveis -> 0 níveis
+    campo aare: 4 níveis -> 0 níveis
+    campo Htb1: 0 níveis -> 8 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo Hbz5: 4 níveis -> 0 níveis
+    campo ahdu: 4 níveis -> 8 níveis
+  ... +8 mudanças
+
+[ANfa]
+  base: ANfa -> Apiv
+    campo aub1: VALORES mudaram
+    campo ahdu: VALORES mudaram
+    campo adur: VALORES mudaram
+    campo atp1: 5 níveis -> 8 níveis
+
+[ANhx]
+    campo aub1: VALORES mudaram
+
+[ANlm]
+  anam: Ave Fenix -> Phoenix Bird
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+
+[ANsw]
+  anam: Serenade do Adeus -> Farewell Serenade
+    campo aub1: 1 níveis -> 8 níveis
+    campo alev: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: 0 níveis -> 8 níveis
+    campo anam: VALORES mudaram
+    campo Usl1: 1 níveis -> 8 níveis
+
+[AOcl]
+  base: AOcl -> Absk
+    campo aub1: VALORES mudaram
+    campo bsk2: 0 níveis -> 8 níveis
+    campo aare: 5 níveis -> 0 níveis
+    campo aran: 5 níveis -> 8 níveis
+    campo atar: 5 níveis -> 8 níveis
+    campo ahdu: 0 níveis -> 8 níveis
+    campo abuf: 0 níveis -> 1 níveis
+    campo adur: 0 níveis -> 8 níveis
+    campo Ocl1: 8 níveis -> 0 níveis
+  ... +4 mudanças
+
+[AOsh]
+  base: AOsh -> AEfk
+    campo aub1: VALORES mudaram
+    campo Efk2: 0 níveis -> 8 níveis
+    campo aare: VALORES mudaram
+    campo acdn: 5 níveis -> 8 níveis
+    campo abuf: 5 níveis -> 0 níveis
+    campo Efk1: 0 níveis -> 8 níveis
+    campo amcs: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[AUim]
+  base: AUim -> AHtb
+  anam: Tempestade Nebulosa -> Andromeda Chain
+    campo Uim1: 8 níveis -> 0 níveis
+    campo aub1: VALORES mudaram
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo acas: 5 níveis -> 0 níveis
+    campo aare: 8 níveis -> 0 níveis
+    campo Htb1: 0 níveis -> 8 níveis
+    campo ahdu: VALORES mudaram
+  ... +4 mudanças
+
+[AUin]
+  base: AUin -> AUls
+    campo Uls1: 0 níveis -> 8 níveis
+    campo aub1: 4 níveis -> 8 níveis
+    campo aare: 4 níveis -> 8 níveis
+    campo aran: 4 níveis -> 0 níveis
+    campo acdn: 4 níveis -> 8 níveis
+    campo ahdu: 4 níveis -> 8 níveis
+    campo Uls2: 0 níveis -> 8 níveis
+    campo abuf: 3 níveis -> 0 níveis
+    campo adur: 4 níveis -> 8 níveis
+  ... +3 mudanças
+
+[AUls]
+  anam: Formacoes de Combate -> Combat Formations
+    campo anam: VALORES mudaram
+    campo aret: VALORES mudaram
+    campo atp1: VALORES mudaram
+
+[Arsw]
+    campo aub1: VALORES mudaram
+
+
+=== Total skills com diferenças: 72 ===
